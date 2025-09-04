@@ -10,7 +10,7 @@ export default function SupportPage() {
         <div className="mx-auto max-w-4xl px-4 py-20 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold">Support Center</h1>
           <p className="mt-6 text-lg text-foreground/85">
-            We're here to help you succeed with digital transformation
+            We&apos;re here to help you succeed with digital transformation
           </p>
         </div>
       </section>
@@ -40,7 +40,7 @@ export default function SupportPage() {
       <section className="mx-auto max-w-3xl px-4 py-16">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold">Get in Touch</h2>
-          <p className="mt-3 text-foreground/70">Send us a message and we'll get back to you</p>
+          <p className="mt-3 text-foreground/70">Send us a message and we&apos;ll get back to you</p>
         </div>
 
         <form className="grid gap-6 card p-8">

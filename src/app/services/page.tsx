@@ -54,7 +54,7 @@ export default function ServicesPage() {
       {/* CTA */}
       <section className="mx-auto max-w-4xl px-4 py-16 text-center">
         <h2 className="text-3xl font-bold">Ready to Get Started?</h2>
-        <p className="mt-4 text-foreground/70">Let's discuss how our services can help your business grow</p>
+        <p className="mt-4 text-foreground/70">Let&apos;s discuss how our services can help your business grow</p>
         <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
           <a href="/support" className="btn-primary">Contact Us</a>
           <a href="/about" className="btn-outline">Learn More About Us</a>

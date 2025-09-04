@@ -34,7 +34,7 @@ export default function AboutPage() {
 
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-bold">Ready to Transform?</h3>
-          <p className="mt-3 text-foreground/70">Let's explore how we can create value together</p>
+          <p className="mt-3 text-foreground/70">Let&apos;s explore how we can create value together</p>
           <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
             <a href="/services" className="btn-primary">View Our Services</a>
             <a href="/support" className="btn-outline">Get in Touch</a>
