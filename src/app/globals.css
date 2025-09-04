@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --muted: #f8fafc;
+  --muted-foreground: #64748b;
+  --border: #e2e8f0;
+  --card: #ffffff;
+  --card-foreground: #0a0a0a;
+  --primary: #0f172a;
+  --primary-foreground: #ffffff;
+  --accent: #f1f5f9;
+  --accent-foreground: #0f172a;
+}
+
+[data-theme="dark"] {
+  --background: #0f0f0f;
+  --foreground: #e4e4e7;
+  --muted: #1a1a1a;
+  --muted-foreground: #a1a1aa;
+  --border: #2a2a2a;
+  --card: #161616;
+  --card-foreground: #e4e4e7;
+  --primary: #e4e4e7;
+  --primary-foreground: #0f0f0f;
+  --accent: #262626;
+  --accent-foreground: #e4e4e7;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Layout helpers */
+.container {
+  @apply mx-auto max-w-6xl px-4;
+}
+
+/* Simple link focus/hover for accessibility */
+a {
+  @apply outline-none focus-visible:ring-2 focus-visible:ring-primary/30 rounded-sm;
+}
+
+/* Modern gradient */
+.brand-gradient {
+  background: linear-gradient(135deg, var(--muted) 0%, var(--accent) 100%);
+}
+
+.card {
+  @apply rounded-lg border-border bg-card text-card-foreground shadow-sm;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-4 py-2 text-sm font-medium hover:opacity-90 transition-all duration-200;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center rounded-md border-border border px-4 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-all duration-200;
+}
+
+/* Enhanced animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
