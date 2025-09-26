@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Footer() {
 	const company = {
 		name: "디알랩스 유한회사",
@@ -119,14 +117,5 @@ export default function Footer() {
 				</div>
 			</div>
 		</footer>
-	);
-}
-
-function CompanyItem({ label, value }: { label: string; value: string }) {
-	return (
-		<div className="flex gap-2">
-			<span className="shrink-0">{label}:</span>
-			<span>{value}</span>
-		</div>
 	);
 }
