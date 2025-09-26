@@ -30,32 +30,24 @@ export default function Footer() {
 						<h4 className="font-semibold mb-3">Quick Links</h4>
 						<ul className="space-y-2 text-sm">
 							<li>
-								<Link
-									href="/about"
-									className="text-muted-foreground hover:text-primary transition-colors">
+								<span className="text-muted-foreground opacity-50 cursor-not-allowed">
 									About Us
-								</Link>
+								</span>
 							</li>
 							<li>
-								<Link
-									href="/services"
-									className="text-muted-foreground hover:text-primary transition-colors">
+								<span className="text-muted-foreground opacity-50 cursor-not-allowed">
 									Services
-								</Link>
+								</span>
 							</li>
 							<li>
-								<Link
-									href="/news"
-									className="text-muted-foreground hover:text-primary transition-colors">
+								<span className="text-muted-foreground opacity-50 cursor-not-allowed">
 									News
-								</Link>
+								</span>
 							</li>
 							<li>
-								<Link
-									href="/community"
-									className="text-muted-foreground hover:text-primary transition-colors">
+								<span className="text-muted-foreground opacity-50 cursor-not-allowed">
 									Community
-								</Link>
+								</span>
 							</li>
 						</ul>
 					</div>
@@ -65,32 +57,24 @@ export default function Footer() {
 						<h4 className="font-semibold mb-3">Support</h4>
 						<ul className="space-y-2 text-sm">
 							<li>
-								<Link
-									href="/support"
-									className="text-muted-foreground hover:text-primary transition-colors">
+								<span className="text-muted-foreground opacity-50 cursor-not-allowed">
 									Contact Us
-								</Link>
+								</span>
 							</li>
 							<li>
-								<Link
-									href="/signup"
-									className="text-muted-foreground hover:text-primary transition-colors">
+								<span className="text-muted-foreground opacity-50 cursor-not-allowed">
 									Sign Up
-								</Link>
+								</span>
 							</li>
 							<li>
-								<a
-									href="#"
-									className="text-muted-foreground hover:text-primary transition-colors">
+								<span className="text-muted-foreground opacity-50 cursor-not-allowed">
 									Documentation
-								</a>
+								</span>
 							</li>
 							<li>
-								<a
-									href="#"
-									className="text-muted-foreground hover:text-primary transition-colors">
+								<span className="text-muted-foreground opacity-50 cursor-not-allowed">
 									FAQ
-								</a>
+								</span>
 							</li>
 						</ul>
 					</div>
