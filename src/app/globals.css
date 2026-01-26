@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+<<<<<<< Updated upstream
 	--background: #ffffff;
 	--foreground: #1a1a2e;
 	--muted: #f8faff;
@@ -97,6 +98,100 @@
 	--color-gradient-to: var(--gradient-to);
 	--font-sans: var(--font-geist-sans);
 	--font-mono: var(--font-geist-mono);
+=======
+  /* Default to dark theme - Alchemist style */
+  --background: #08080c;
+  --background-secondary: #0d0d14;
+  --foreground: #e8e8ec;
+  --foreground-muted: #a8a8b0;
+  --muted: #12121a;
+  --muted-foreground: #888892;
+  --border: #1f1f2a;
+  --border-light: #2a2a38;
+  --card: #0f0f18;
+  --card-foreground: #e8e8ec;
+  --primary: #d4af37;
+  --primary-foreground: #08080c;
+  --accent: #0d9488;
+  --accent-secondary: #14b8a6;
+  --accent-foreground: #08080c;
+  --metallic: #c0c0c8;
+  --metallic-light: #d4d4dc;
+  --navy: #1e3a5f;
+  --deep-blue: #0f172a;
+}
+
+[data-theme="light"] {
+  --background: #fafafa;
+  --background-secondary: #f4f4f5;
+  --foreground: #18181b;
+  --foreground-muted: #52525b;
+  --muted: #f1f1f4;
+  --muted-foreground: #71717a;
+  --border: #e4e4e7;
+  --border-light: #d4d4d8;
+  --card: #ffffff;
+  --card-foreground: #18181b;
+  --primary: #b8960c;
+  --primary-foreground: #ffffff;
+  --accent: #0f766e;
+  --accent-secondary: #0d9488;
+  --accent-foreground: #ffffff;
+  --metallic: #52525b;
+  --metallic-light: #71717a;
+  --navy: #1e3a5f;
+  --deep-blue: #0f172a;
+}
+
+[data-theme="dark"] {
+  --background: #08080c;
+  --background-secondary: #0d0d14;
+  --foreground: #e8e8ec;
+  --foreground-muted: #a8a8b0;
+  --muted: #12121a;
+  --muted-foreground: #888892;
+  --border: #1f1f2a;
+  --border-light: #2a2a38;
+  --card: #0f0f18;
+  --card-foreground: #e8e8ec;
+  --primary: #d4af37;
+  --primary-foreground: #08080c;
+  --accent: #0d9488;
+  --accent-secondary: #14b8a6;
+  --accent-foreground: #08080c;
+  --metallic: #c0c0c8;
+  --metallic-light: #d4d4dc;
+  --navy: #1e3a5f;
+  --deep-blue: #0f172a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-border-light: var(--border-light);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-metallic: var(--metallic);
+  --color-metallic-light: var(--metallic-light);
+  --color-navy: var(--navy);
+  --color-deep-blue: var(--deep-blue);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+>>>>>>> Stashed changes
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -106,11 +201,23 @@ body {
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Layout helpers */
+/* Selection style */
+::selection {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+/* Focus styles */
+a {
+  @apply outline-none focus-visible:ring-2 focus-visible:ring-primary/40 rounded-sm;
+}
+
+/* Container */
 .container {
 	@apply mx-auto max-w-6xl px-4;
 }
 
+<<<<<<< Updated upstream
 /* Simple link focus/hover for accessibility */
 a {
 	@apply outline-none focus-visible:ring-2 focus-visible:ring-primary/30 rounded-sm;
@@ -178,22 +285,140 @@ a {
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+=======
+/* Alchemist gradient backgrounds */
+.gradient-hero {
+  background: 
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 40% at 80% 60%, rgba(13, 148, 136, 0.06) 0%, transparent 40%),
+    var(--background);
 }
 
+.gradient-subtle {
+  background: 
+    radial-gradient(ellipse 50% 80% at 20% 100%, rgba(13, 148, 136, 0.04) 0%, transparent 50%),
+    var(--background-secondary);
+>>>>>>> Stashed changes
+}
+
+.gradient-card {
+  background: linear-gradient(135deg, var(--card) 0%, rgba(212, 175, 55, 0.02) 100%);
+}
+
+/* Metallic text effect */
+.text-metallic {
+  background: linear-gradient(135deg, var(--metallic-light) 0%, var(--metallic) 50%, var(--metallic-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gold {
+  background: linear-gradient(135deg, #f5d060 0%, #d4af37 50%, #aa8c2c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card styles */
 .card {
+<<<<<<< Updated upstream
 	@apply rounded-lg border-border bg-card text-card-foreground shadow-sm;
+=======
+  @apply rounded-xl border border-border bg-card text-card-foreground;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+>>>>>>> Stashed changes
 }
 
+.card-hover {
+  @apply hover:border-border-light hover:shadow-lg;
+}
+
+.card-glow:hover {
+  box-shadow: 
+    0 0 20px rgba(212, 175, 55, 0.08),
+    0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons */
 .btn-primary {
+<<<<<<< Updated upstream
 	@apply inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-4 py-2 text-sm font-medium hover:opacity-90 transition-all duration-200;
 }
 
 .btn-outline {
 	@apply inline-flex items-center justify-center rounded-md border-border border px-4 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-all duration-200;
+=======
+  @apply inline-flex items-center justify-center rounded-lg px-5 py-2.5 text-sm font-medium transition-all duration-300;
+  background: linear-gradient(135deg, var(--primary) 0%, #aa8c2c 100%);
+  color: var(--primary-foreground);
 }
 
-/* Enhanced animations */
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.25);
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center rounded-lg border border-border px-5 py-2.5 text-sm font-medium transition-all duration-300;
+  color: var(--foreground);
+>>>>>>> Stashed changes
+}
+
+.btn-outline:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: rgba(212, 175, 55, 0.05);
+}
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200;
+  color: var(--foreground-muted);
+}
+
+.btn-ghost:hover {
+  color: var(--foreground);
+  background: var(--muted);
+}
+
+/* Decorative elements */
+.line-accent {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--primary) 50%, transparent 100%);
+}
+
+.dot-accent {
+  @apply w-1.5 h-1.5 rounded-full;
+  background: var(--primary);
+}
+
+.ring-accent {
+  @apply absolute rounded-full border border-primary/20;
+}
+
+/* Section divider */
+.section-divider {
+  @apply w-full h-px;
+  background: linear-gradient(90deg, transparent 0%, var(--border-light) 20%, var(--border-light) 80%, transparent 100%);
+}
+
+/* Subtle noise texture overlay */
+.noise-overlay {
+  position: relative;
+}
+
+.noise-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.02;
+  pointer-events: none;
+}
+
+/* Animations */
 @keyframes fadeInUp {
+<<<<<<< Updated upstream
 	from {
 		opacity: 0;
 		transform: translateY(20px);
@@ -226,4 +451,49 @@ a {
 /* Smooth scrolling */
 html {
 	scroll-behavior: smooth;
+=======
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
+
+.animate-shimmer {
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+
+/* Delay utilities */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+
+/* Geometric decorations */
+.hex-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l25.98 15v30L30 60 4.02 45V15z' fill='none' stroke='%23d4af37' stroke-opacity='0.03'/%3E%3C/svg%3E");
+  background-size: 60px 60px;
+>>>>>>> Stashed changes
 }
