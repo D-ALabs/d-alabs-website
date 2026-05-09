@@ -1,0 +1,405 @@
+{
+  "Metadata": {
+    "title": "D-ALabs · Digital Alchemy for Value Creation",
+    "description": "D-ALabs transforms ideas into measurable value through digital alchemy — combining AI, data, and cloud engineering.",
+    "siteName": "D-ALabs"
+  },
+  "Nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "news": "News",
+    "community": "Community",
+    "support": "Support",
+    "signup": "Sign Up",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "LanguageSwitcher": {
+    "label": "Language",
+    "en": "English",
+    "ko": "한국어"
+  },
+  "Theme": {
+    "toLight": "Switch to light mode",
+    "toDark": "Switch to dark mode"
+  },
+  "Home": {
+    "hero": {
+      "eyebrow": "Digital Alchemist Labs",
+      "headlinePrimary": "Transforming Ideas",
+      "headlineSecondary": "Into Real Value",
+      "description": "We engineer with AI, data, and cloud — turning complexity into opportunity through the craft of digital alchemy.",
+      "ctaPrimary": "Explore Services",
+      "ctaSecondary": "About Us",
+      "operating": "Products in production"
+    },
+    "expertise": {
+      "eyebrow": "Core Expertise",
+      "title": "What We Do",
+      "subtitle": "Digital alchemy through experimentation and execution",
+      "ai": {
+        "title": "AI Strategy",
+        "description": "From PoC to production — AI solutions tailored to your business"
+      },
+      "data": {
+        "title": "Data Platform",
+        "description": "End-to-end ingestion, processing, and visualization"
+      },
+      "cloud": {
+        "title": "Cloud Architecture",
+        "description": "Scalable, reliable infrastructure designed for growth"
+      }
+    },
+    "services": {
+      "eyebrow": "Our Services",
+      "title": "Products We've Crafted",
+      "subtitle": "Real solutions, in production",
+      "signgpt": {
+        "title": "SignGPT",
+        "tagline": "Sign Language AI",
+        "description": "An AI-powered sign language translation solution that breaks down communication barriers — bringing real-time recognition and translation to everyone.",
+        "cta": "Visit SignGPT"
+      },
+      "lembic": {
+        "title": "Lembic AI",
+        "tagline": "Content Creation Platform",
+        "description": "An AI-driven digital content creation platform for creators and businesses — generate images, videos, and copy in one place.",
+        "cta": "Visit Lembic"
+      }
+    },
+    "process": {
+      "eyebrow": "Our Process",
+      "title": "The Alchemist's Method",
+      "subtitle": "How raw ideas become refined value",
+      "discover": {
+        "step": "01",
+        "title": "Discover",
+        "description": "Understand the business and surface the real problem"
+      },
+      "refine": {
+        "step": "02",
+        "title": "Refine",
+        "description": "Distill complexity into a focused approach"
+      },
+      "transmute": {
+        "step": "03",
+        "title": "Transmute",
+        "description": "Engineer with rigor — AI, data, cloud"
+      },
+      "deliver": {
+        "step": "04",
+        "title": "Deliver",
+        "description": "Ship measurable, sustainable outcomes"
+      }
+    },
+    "cta": {
+      "title": "Ready to build something valuable?",
+      "subtitle": "Let's talk about your project. We'll propose the right approach.",
+      "button": "Get in Touch"
+    }
+  },
+  "About": {
+    "metadata": {
+      "title": "About · D-ALabs"
+    },
+    "hero": {
+      "eyebrow": "About Us",
+      "title": "Digital Alchemist Labs",
+      "description": "The art of turning technology into value. Through innovation, experimentation, and execution, we build change."
+    },
+    "philosophy": {
+      "body": "D-ALabs combines data science, artificial intelligence, cloud computing, and creativity to turn challenges into opportunities. We believe in sustainable growth through digital transformation and human-centered solutions."
+    },
+    "values": {
+      "title": "What Drives Us",
+      "mission": {
+        "title": "Mission",
+        "description": "Create positive change through digital alchemy"
+      },
+      "vision": {
+        "title": "Vision",
+        "description": "Be the most trusted partner for digital innovation"
+      },
+      "principles": {
+        "title": "Values",
+        "description": "Human-centered, experimental, sustainably impactful"
+      },
+      "culture": {
+        "title": "Culture",
+        "description": "Open, autonomous, in pursuit of excellence"
+      }
+    },
+    "products": {
+      "title": "Products in Production",
+      "subtitle": "What D-ALabs is building"
+    },
+    "cta": {
+      "title": "Ready to make something with us?",
+      "subtitle": "Discover how we create value together",
+      "primary": "Explore Services",
+      "secondary": "Get in Touch"
+    }
+  },
+  "Services": {
+    "metadata": {
+      "title": "Services · D-ALabs"
+    },
+    "hero": {
+      "eyebrow": "Services",
+      "title": "Our Expertise",
+      "description": "Digital alchemy solutions for business transformation"
+    },
+    "items": {
+      "ai": {
+        "title": "AI Consulting",
+        "description": "From PoC to production — strategic AI implementation",
+        "features": ["Strategy", "Proof of concept", "Model training", "Production scaling"]
+      },
+      "data": {
+        "title": "Data Platform",
+        "description": "End-to-end data ingestion, processing, and visualization",
+        "features": ["Pipelines", "Analytics dashboards", "Real-time processing", "Data governance"]
+      },
+      "cloud": {
+        "title": "Cloud Architecture",
+        "description": "Scalable infrastructure for modern applications",
+        "features": ["System design", "Migration strategy", "Performance tuning", "Security"]
+      },
+      "product": {
+        "title": "Product Development",
+        "description": "Full-stack web and mobile application development",
+        "features": ["UI/UX design", "Frontend", "Backend APIs", "Mobile"]
+      },
+      "growth": {
+        "title": "Growth Acceleration",
+        "description": "Experiment-driven growth and optimization",
+        "features": ["A/B testing", "Growth analytics", "CRO", "User research"]
+      },
+      "training": {
+        "title": "Training & Workshops",
+        "description": "Build digital capability inside your team",
+        "features": ["Tech training", "Workshops", "Mentoring", "Best practices"]
+      }
+    },
+    "process": {
+      "title": "How We Work",
+      "subtitle": "A systematic approach to creating value",
+      "discovery": { "title": "Discovery", "description": "Business understanding and requirements analysis" },
+      "strategy": { "title": "Strategy", "description": "Designing the optimal solution" },
+      "execute": { "title": "Execute", "description": "Agile, iterative implementation" },
+      "iterate": { "title": "Iterate", "description": "Continuous improvement and optimization" }
+    },
+    "cta": {
+      "title": "Ready to start a project?",
+      "subtitle": "We'll help you find the right solution for your business",
+      "primary": "Get in Touch",
+      "secondary": "About Us"
+    }
+  },
+  "News": {
+    "metadata": {
+      "title": "News · D-ALabs"
+    },
+    "hero": {
+      "eyebrow": "News",
+      "title": "Latest Updates",
+      "description": "Updates and insights from D-ALabs"
+    },
+    "articles": {
+      "platformLaunch": {
+        "category": "Press Release",
+        "title": "D-ALabs launches AI-powered experimentation platform",
+        "excerpt": "An innovative platform combining machine learning with rapid experimentation to accelerate digital transformation.",
+        "date": "September 1, 2025",
+        "featured": "Featured"
+      },
+      "communityBeta": {
+        "category": "Announcement",
+        "title": "Community beta program now open",
+        "excerpt": "Join our beta community for early access to new features and help shape the future of digital alchemy.",
+        "date": "August 15, 2025"
+      },
+      "summit": {
+        "category": "Event",
+        "title": "Digital Alchemy Summit 2025",
+        "excerpt": "Industry leaders and innovators gather to share insights on the future of digital transformation.",
+        "date": "July 30, 2025"
+      },
+      "insight": {
+        "category": "Insight",
+        "title": "The future of AI-driven business strategy",
+        "excerpt": "How artificial intelligence is reshaping strategic decision-making for modern enterprises.",
+        "date": "July 15, 2025"
+      }
+    },
+    "newsletter": {
+      "title": "Stay Connected",
+      "subtitle": "Subscribe to our newsletter for the latest updates",
+      "cta": "Subscribe"
+    }
+  },
+  "Community": {
+    "metadata": {
+      "title": "Community · D-ALabs"
+    },
+    "hero": {
+      "eyebrow": "Community",
+      "title": "Join Our Community",
+      "description": "Connect, learn, and grow with fellow digital alchemists"
+    },
+    "items": {
+      "forum": {
+        "title": "Discussion Forum",
+        "description": "Share knowledge, ask questions, and collaborate on digital transformation projects",
+        "status": "Coming Soon",
+        "members": "500+ members"
+      },
+      "events": {
+        "title": "Meetups & Events",
+        "description": "Join regular meetups, workshops, and networking events online and in person",
+        "status": "Active",
+        "members": "200+ members"
+      },
+      "learning": {
+        "title": "Learning Resources",
+        "description": "Curated learning materials, case studies, and best practices from experts",
+        "status": "Beta",
+        "members": "150+ members"
+      },
+      "openSource": {
+        "title": "Open Source",
+        "description": "Contribute to open source projects and help shape the future of digital alchemy",
+        "status": "Active",
+        "members": "75+ members"
+      }
+    },
+    "cta": {
+      "title": "Ready to connect?",
+      "subtitle": "Join the innovators shaping the digital future",
+      "primary": "Join Community",
+      "secondary": "Read News"
+    }
+  },
+  "Support": {
+    "metadata": {
+      "title": "Support · D-ALabs"
+    },
+    "hero": {
+      "eyebrow": "Support",
+      "title": "Support Center",
+      "description": "We're here for your digital transformation"
+    },
+    "options": {
+      "tech": {
+        "title": "Technical Support",
+        "description": "Help with implementation, troubleshooting, and optimization",
+        "action": "Contact Tech Team"
+      },
+      "sales": {
+        "title": "Sales Inquiry",
+        "description": "Learn about our services and find the right solution",
+        "action": "Talk to Sales"
+      },
+      "partner": {
+        "title": "Partnership",
+        "description": "Explore collaboration and strategic partnerships",
+        "action": "Discuss Partnership"
+      }
+    },
+    "form": {
+      "title": "Get in Touch",
+      "subtitle": "Send us a message and we'll respond promptly",
+      "fields": {
+        "name": "Name",
+        "namePlaceholder": "Your name",
+        "email": "Email",
+        "emailPlaceholder": "you@company.com",
+        "subject": "Subject",
+        "subjectPlaceholder": "How can we help?",
+        "message": "Message",
+        "messagePlaceholder": "Tell us about your project or question..."
+      },
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "success": "Thanks — we'll get back to you within one business day.",
+      "error": "Something went wrong. Please try again or email us directly.",
+      "validation": {
+        "nameRequired": "Please tell us your name",
+        "emailRequired": "Please share your email",
+        "emailInvalid": "That doesn't look like a valid email",
+        "subjectRequired": "Please add a subject",
+        "messageRequired": "Please write a message",
+        "messageTooShort": "Please write a bit more (at least 10 characters)"
+      }
+    }
+  },
+  "Signup": {
+    "metadata": {
+      "title": "Sign Up · D-ALabs"
+    },
+    "hero": {
+      "eyebrow": "Get Started",
+      "title": "Join D-ALabs",
+      "description": "Start your digital transformation journey with us"
+    },
+    "form": {
+      "title": "Create Your Account",
+      "subtitle": "Join our community to get early access and updates",
+      "fields": {
+        "name": "Name",
+        "namePlaceholder": "Your name",
+        "email": "Email",
+        "emailPlaceholder": "you@company.com",
+        "company": "Company (optional)",
+        "companyPlaceholder": "Company name"
+      },
+      "submit": "Join the List",
+      "submitting": "Joining...",
+      "success": "You're in. Check your inbox for confirmation.",
+      "error": "Something went wrong. Please try again.",
+      "consent": "By joining, you agree to our terms of service and privacy policy.",
+      "alreadyMember": "Already a member?",
+      "login": "Sign in"
+    }
+  },
+  "Footer": {
+    "tagline": "Digital Alchemist Labs",
+    "description": "Transforming data and technology into value.",
+    "columns": {
+      "services": "Services",
+      "company": "Company",
+      "contact": "Contact",
+      "legal": "Legal"
+    },
+    "links": {
+      "about": "About Us",
+      "services": "Services",
+      "news": "News",
+      "community": "Community",
+      "support": "Support",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "comingSoon": "Coming Soon",
+    "company": {
+      "name": "D-ALabs Co., Ltd.",
+      "ceo": "CEO Jeseok Lee",
+      "address": "1140, 190 Wirye-daero, Hanam-si, Gyeonggi-do, Republic of Korea",
+      "bizNumber": "Business No. 547-87-03375",
+      "mailOrderNumber": "E-Commerce No. NaN",
+      "bankAccount": "IBK 242-143459-04-001 D-ALabs Co., Ltd."
+    },
+    "rights": "All rights reserved.",
+    "madeWith": "Made with"
+  },
+  "Common": {
+    "learnMore": "Learn More",
+    "backToHome": "Back to home",
+    "comingSoon": "Coming Soon",
+    "active": "Active",
+    "beta": "Beta",
+    "loading": "Loading..."
+  }
+}
