@@ -1,5 +1,7 @@
 import React from "react";
 
+const r4 = (n: number) => Math.round(n * 10000) / 10000;
+
 export function GreatSigil({ size = 560 }: { size?: number }) {
   return (
     <svg
@@ -110,8 +112,8 @@ export function GreatSigil({ size = 560 }: { size?: number }) {
         {[0, 60, 120, 180, 240, 300].map((a) => (
           <circle
             key={`outer-e-${a}`}
-            cx={Math.sin((a * Math.PI) / 180) * 96}
-            cy={-Math.cos((a * Math.PI) / 180) * 96}
+            cx={r4(Math.sin((a * Math.PI) / 180) * 96)}
+            cy={r4(-Math.cos((a * Math.PI) / 180) * 96)}
             r="2.6"
             fill="currentColor"
             opacity="0.85"
@@ -126,8 +128,8 @@ export function GreatSigil({ size = 560 }: { size?: number }) {
         {[0, 72, 144, 216, 288].map((a) => (
           <circle
             key={`bohr-${a}`}
-            cx={Math.sin((a * Math.PI) / 180) * 62}
-            cy={-Math.cos((a * Math.PI) / 180) * 62}
+            cx={r4(Math.sin((a * Math.PI) / 180) * 62)}
+            cy={r4(-Math.cos((a * Math.PI) / 180) * 62)}
             r="2.6"
             fill="currentColor"
           />
@@ -135,8 +137,8 @@ export function GreatSigil({ size = 560 }: { size?: number }) {
         {[36, 156, 276].map((a) => (
           <circle
             key={`bohr-in-${a}`}
-            cx={Math.sin((a * Math.PI) / 180) * 48}
-            cy={-Math.cos((a * Math.PI) / 180) * 48}
+            cx={r4(Math.sin((a * Math.PI) / 180) * 48)}
+            cy={r4(-Math.cos((a * Math.PI) / 180) * 48)}
             r="1.8"
             fill="currentColor"
             opacity="0.7"
