@@ -1,67 +1,30 @@
-import type { Metadata } from "next";
-import { setRequestLocale, getTranslations } from "next-intl/server";
-import ScrollReveal from "@/components/ScrollReveal";
-import SignupForm from "@/components/SignupForm";
+"use client";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { ArrowIcon } from "@/components/sigils";
 
-type Props = { params: Promise<{ locale: string }> };
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Signup.metadata" });
-  return { title: t("title") };
-}
-
-export default async function SignupPage({ params }: Props) {
-  const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations("Signup");
-
+export default function SignupPage() {
+  const t = useTranslations("Signup.hero");
   return (
-    <>
-      {/* Hero */}
-      <section className="relative gradient-hero overflow-hidden">
-        <div className="absolute inset-0 hex-pattern opacity-30 pointer-events-none" />
-        <div className="container-app relative py-20 sm:py-28 text-center">
-          <div className="inline-flex items-center gap-3 mb-6">
-            <span className="divider-x" />
-            <span className="text-eyebrow">{t("hero.eyebrow")}</span>
-            <span className="divider-x" />
+    <div className="page-enter">
+      <section className="section" style={{ paddingTop: 160, paddingBottom: 200, textAlign: "center" }}>
+        <div className="container" style={{ maxWidth: 640 }}>
+          <div className="eyebrow" style={{ justifyContent: "center", marginBottom: 28 }}>
+            <span>{t("eyebrow")}</span>
           </div>
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-metallic">
-            {t("hero.title")}
+          <h1 className="text-balance" style={{ marginBottom: 24 }}>
+            {t("titleA")}
+            <span className="serif-italic gold">{t("em")}</span>
+            {t("titleB")}
           </h1>
-          <p className="mt-6 text-lg text-foreground-muted max-w-2xl mx-auto">
-            {t("hero.description")}
+          <p className="dim" style={{ fontSize: 18, marginBottom: 40 }}>
+            {t("lede")}
           </p>
+          <Link className="btn btn-primary" href="/">
+            <ArrowIcon />
+          </Link>
         </div>
       </section>
-
-      {/* Form */}
-      <section className="container-app py-16">
-        <ScrollReveal>
-          <div className="max-w-md mx-auto">
-            <div className="text-center mb-8">
-              <h2 className="font-display text-xl font-bold tracking-tight text-foreground">
-                {t("form.title")}
-              </h2>
-              <p className="mt-2 text-sm text-foreground-muted">
-                {t("form.subtitle")}
-              </p>
-            </div>
-            <SignupForm />
-
-            <p className="mt-8 text-center text-sm text-foreground-muted">
-              {t("form.alreadyMember")}{" "}
-              <a
-                href="#"
-                className="text-primary hover:text-primary-light transition-colors underline-offset-4 hover:underline"
-              >
-                {t("form.login")}
-              </a>
-            </p>
-          </div>
-        </ScrollReveal>
-      </section>
-    </>
+    </div>
   );
 }

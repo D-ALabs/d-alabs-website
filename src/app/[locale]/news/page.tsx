@@ -1,126 +1,140 @@
-import type { Metadata } from "next";
-import { setRequestLocale, getTranslations } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
-import ScrollReveal from "@/components/ScrollReveal";
+"use client";
+import { useState } from "react";
+import { useTranslations } from "next-intl";
+import Reveal from "@/components/Reveal";
+import { ArrowIcon, GreatSigil } from "@/components/sigils";
 
-type Props = { params: Promise<{ locale: string }> };
+type Item = { date: string; tag: string; title: string; excerpt: string };
 
-const ARTICLE_KEYS = [
-  { key: "platformLaunch", featured: true },
-  { key: "communityBeta", featured: false },
-  { key: "summit", featured: false },
-  { key: "insight", featured: false },
-] as const;
+export default function NewsPage() {
+  const t = useTranslations("News");
+  const items = t.raw("items") as Item[];
+  const filters = [
+    { key: "all", label: t("filterAll") },
+    { key: "product", label: t("filterProduct") },
+    { key: "research", label: t("filterResearch") },
+    { key: "engineering", label: t("filterEngineering") },
+    { key: "lab", label: t("filterLab") },
+  ];
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "News.metadata" });
-  return { title: t("title") };
-}
-
-export default async function NewsPage({ params }: Props) {
-  const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations("News");
+  const [active, setActive] = useState<string>("all");
+  const activeLabel = filters.find((f) => f.key === active)?.label ?? "";
+  const filtered = active === "all" ? items : items.filter((i) => i.tag === activeLabel);
 
   return (
-    <>
-      {/* Hero */}
-      <section className="relative gradient-hero overflow-hidden">
-        <div className="absolute inset-0 hex-pattern opacity-30 pointer-events-none" />
-        <div className="container-app relative py-20 sm:py-28 text-center">
-          <div className="inline-flex items-center gap-3 mb-6">
-            <span className="divider-x" />
-            <span className="text-eyebrow">{t("hero.eyebrow")}</span>
-            <span className="divider-x" />
+    <div className="page-enter">
+      <section className="section" style={{ paddingTop: 100, paddingBottom: 80 }}>
+        <div className="container">
+          <div className="eyebrow left" style={{ marginBottom: 28 }}>
+            <span>{t("heroEyebrow")}</span>
           </div>
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-metallic">
-            {t("hero.title")}
+          <h1 className="text-balance" style={{ maxWidth: 920 }}>
+            {t("heroTitleA")}
+            <span className="serif-italic gold">{t("heroEm")}</span>
+            {t("heroTitleB")}
           </h1>
-          <p className="mt-6 text-lg text-foreground-muted max-w-2xl mx-auto">
-            {t("hero.description")}
+          <p className="lede" style={{ fontSize: 20, maxWidth: 600, marginTop: 20 }}>
+            {t("heroLede")}
           </p>
-        </div>
-      </section>
 
-      {/* Articles */}
-      <section className="container-app py-20">
-        <div className="space-y-5 max-w-3xl mx-auto">
-          {ARTICLE_KEYS.map((article, i) => (
-            <ScrollReveal key={article.key} delay={i * 80}>
-              <NewsCard
-                category={t(`articles.${article.key}.category`)}
-                title={t(`articles.${article.key}.title`)}
-                excerpt={t(`articles.${article.key}.excerpt`)}
-                date={t(`articles.${article.key}.date`)}
-                featured={article.featured}
-                featuredLabel={
-                  article.featured
-                    ? t("articles.platformLaunch.featured")
-                    : undefined
-                }
-              />
-            </ScrollReveal>
-          ))}
-        </div>
-
-        {/* Newsletter CTA */}
-        <ScrollReveal>
-          <div className="mt-20 text-center">
-            <h3 className="font-display text-2xl font-bold text-metallic">
-              {t("newsletter.title")}
-            </h3>
-            <p className="mt-3 text-foreground-muted">
-              {t("newsletter.subtitle")}
-            </p>
-            <Link href="/signup" className="btn-primary mt-6 text-sm px-6">
-              {t("newsletter.cta")}
-            </Link>
+          <div style={{ display: "flex", gap: 6, marginTop: 56, flexWrap: "wrap" }}>
+            {filters.map((f) => {
+              const on = active === f.key;
+              return (
+                <button
+                  key={f.key}
+                  onClick={() => setActive(f.key)}
+                  style={{
+                    fontFamily: "JetBrains Mono, monospace",
+                    fontSize: 11,
+                    letterSpacing: "0.18em",
+                    textTransform: "uppercase",
+                    padding: "8px 16px",
+                    border: "1px solid",
+                    background: on ? "var(--gold)" : "transparent",
+                    color: on ? "var(--bg)" : "var(--ink-dim)",
+                    borderColor: on ? "var(--gold)" : "var(--line)",
+                    borderRadius: 999,
+                    cursor: "pointer",
+                    transition: "all 0.3s ease",
+                  }}
+                >
+                  {f.label}
+                </button>
+              );
+            })}
           </div>
-        </ScrollReveal>
+        </div>
       </section>
-    </>
-  );
-}
 
-function NewsCard({
-  category,
-  title,
-  excerpt,
-  date,
-  featured,
-  featuredLabel,
-}: {
-  category: string;
-  title: string;
-  excerpt: string;
-  date: string;
-  featured?: boolean;
-  featuredLabel?: string;
-}) {
-  return (
-    <article
-      className={`card card-hover ${
-        featured ? "card-glow border-primary/20" : ""
-      } p-6 sm:p-7`}
-    >
-      <div className="flex items-center gap-3 mb-3">
-        <span className="text-[11px] font-medium text-primary uppercase tracking-[0.16em]">
-          {category}
-        </span>
-        {featured && featuredLabel && (
-          <span className="text-[10px] px-2 py-0.5 rounded-full bg-primary/10 text-primary tracking-wider uppercase">
-            {featuredLabel}
-          </span>
-        )}
-      </div>
-      <h3 className="font-display text-xl font-semibold leading-snug tracking-tight">
-        {title}
-      </h3>
-      <p className="mt-3 text-foreground-muted leading-relaxed text-pretty">
-        {excerpt}
-      </p>
-      <div className="mt-4 text-xs text-foreground-subtle">{date}</div>
-    </article>
+      <section style={{ paddingBottom: 120 }}>
+        <div className="container">
+          <div className="news-list">
+            {filtered.map((n, i) => (
+              <Reveal key={n.title} delay={i * 40}>
+                <div className="news-row">
+                  <div className="date">{n.date}</div>
+                  <div>
+                    <div className="news-title text-balance">{n.title}</div>
+                    <div className="dim" style={{ fontSize: 14, marginTop: 6, maxWidth: 620 }}>
+                      {n.excerpt}
+                    </div>
+                  </div>
+                  <div className="tag">— {n.tag}</div>
+                  <div className="arrow-end">
+                    <ArrowIcon />
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="cta-section" style={{ paddingTop: 40, paddingBottom: 160 }}>
+        <div className="sigil-bg">
+          <GreatSigil size={480} />
+        </div>
+        <div className="container">
+          <h2 className="text-balance" style={{ maxWidth: 800 }}>
+            {t("ctaTitleA")}
+            <span className="serif-italic gold">{t("ctaEm")}</span>
+            {t("ctaTitleB")}
+          </h2>
+          <p className="cta-sub">{t("ctaSub")}</p>
+          <form
+            style={{
+              display: "flex",
+              gap: 8,
+              maxWidth: 460,
+              margin: "0 auto",
+              justifyContent: "center",
+              flexWrap: "wrap",
+            }}
+            onSubmit={(e) => e.preventDefault()}
+          >
+            <input
+              type="email"
+              placeholder={t("ctaPlaceholder")}
+              style={{
+                flex: 1,
+                minWidth: 240,
+                padding: "14px 18px",
+                background: "transparent",
+                border: "1px solid var(--line-strong)",
+                borderRadius: 999,
+                color: "var(--ink)",
+                fontFamily: "inherit",
+                fontSize: 14,
+                outline: "none",
+              }}
+            />
+            <button className="btn btn-primary" type="submit">
+              {t("ctaBtn")}
+            </button>
+          </form>
+        </div>
+      </section>
+    </div>
   );
 }

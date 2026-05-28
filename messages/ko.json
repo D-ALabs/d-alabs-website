@@ -7,10 +7,10 @@
   "Nav": {
     "home": "홈",
     "services": "서비스",
-    "about": "회사소개",
-    "news": "뉴스",
+    "about": "소개",
+    "news": "소식",
     "community": "커뮤니티",
-    "support": "지원",
+    "support": "고객 지원",
     "signup": "가입하기",
     "contact": "문의",
     "menu": "메뉴",
@@ -26,287 +26,283 @@
     "toDark": "다크 모드로 전환"
   },
   "Home": {
-    "hero": {
-      "eyebrow": "디지털 연금술사 랩스",
-      "headlinePrimary": "아이디어를",
-      "headlineSecondary": "가치로 전환합니다",
-      "description": "AI, 데이터, 클라우드 기술로 복잡한 문제를 기회로 만들어갑니다 — 디지털 연금술이라는 장인의 방식으로.",
-      "ctaPrimary": "서비스 보기",
-      "ctaSecondary": "회사 소개",
-      "operating": "운영 중인 서비스"
-    },
+    "heroEyebrow": "디지털 연금술 연구소 · MMXXIV 설립",
+    "heroTitleA": "",
+    "heroEmA": "아이디어",
+    "heroTitleB": "를 ",
+    "heroEmB": "진정한 가치",
+    "heroTitleC": "로 변환합니다.",
+    "heroLede": "AI와 데이터, 클라우드를 한데 엮는 엔지니어링. 디지털 연금술이라는 절제된 공정으로, 복잡함을 기회로 바꿉니다.",
+    "heroCta1": "서비스 둘러보기",
+    "heroCta2": "연구소 알아보기",
+    "heroStat1": "운영 중인 제품",
+    "heroStat2": "핵심 분야",
+    "heroStat3": "4단계 방법론",
+    "marquee": [
+      "Solve et Coagula",
+      "AI · 데이터 · 클라우드",
+      "Quinta Essentia",
+      "PoC에서 프로덕션까지",
+      "Ignis · Aqua · Terra · Aer",
+      "엄밀하게 빚어낸 기술",
+      "Ars Magna"
+    ],
+    "expertiseEyebrow": "핵심 전문성 · I",
+    "expertiseTitleA": "우리가 ",
+    "expertiseEm": "하는 일",
+    "expertiseTitleB": ".",
+    "expertiseMeta": "세 가지 분야를 한데 다룹니다. 연구의 깊이와 프로덕션의 엄밀함을 — 실험과 실행을 통해 — 함께 빚어냅니다.",
+    "disciplineLabel": "분야",
     "expertise": {
-      "eyebrow": "핵심 역량",
-      "title": "우리가 하는 일",
-      "subtitle": "실험과 실행을 통한 디지털 연금술",
       "ai": {
         "title": "AI 전략",
-        "description": "PoC부터 프로덕션까지, 비즈니스에 맞춘 AI 솔루션"
+        "desc": "개념 증명에서 프로덕션까지 — 최신 유행이 아니라, 문제의 본질에 맞춰 설계된 응용 AI를 다룹니다.",
+        "tags": ["LLM 시스템", "에이전트", "평가", "파인튜닝"]
       },
       "data": {
         "title": "데이터 플랫폼",
-        "description": "데이터 수집, 처리, 시각화의 엔드투엔드 솔루션"
+        "desc": "수집·처리·시각화에 이르는 엔드투엔드. 그 위에서 모든 것이 정제되는 바탕 물질입니다.",
+        "tags": ["파이프라인", "데이터 웨어하우스", "스트리밍", "분석"]
       },
       "cloud": {
         "title": "클라우드 아키텍처",
-        "description": "성장에 맞춰 확장 가능한 안정적 인프라"
+        "desc": "성장에 맞춰 확장되는 안정적인 인프라. 안쪽은 수은처럼 유연하게, 바깥은 단단하게.",
+        "tags": ["AWS", "쿠버네티스", "IaC", "관측성"]
       }
     },
-    "services": {
-      "eyebrow": "운영 중인 서비스",
-      "title": "우리가 만든 프로덕트",
-      "subtitle": "실제로 운영되는 솔루션",
+    "productsEyebrow": "우리의 작업 · II",
+    "productsTitleA": "우리가 ",
+    "productsEm": "빚어낸",
+    "productsTitleB": " 제품들.",
+    "productsMeta": "프로덕션에서 동작하는 실제 솔루션. 각각이 서로 다른 변환을 담는 그릇입니다 — 언어, 이미지, 음성, 가치.",
+    "products": {
       "signgpt": {
-        "title": "SignGPT",
-        "tagline": "수어 AI",
-        "description": "AI 기반 수어 번역 솔루션. 실시간 인식과 번역으로 소통의 장벽을 허물어 누구나 연결될 수 있는 세상을 만듭니다.",
-        "cta": "SignGPT 방문"
+        "kicker": "수어 AI",
+        "desc": "청각인과 농인 공동체 사이의 벽을 녹여내는 AI 수어 번역 엔진. 실시간 인식과 번역을, 디바이스 위에서 해냅니다.",
+        "visit": "SignGPT.org 방문"
       },
       "lembic": {
-        "title": "Lembic AI",
-        "tagline": "콘텐츠 제작 플랫폼",
-        "description": "크리에이터와 비즈니스를 위한 AI 기반 디지털 콘텐츠 제작 플랫폼. 이미지, 비디오, 텍스트를 한 곳에서.",
-        "cta": "Lembic 방문"
+        "kicker": "콘텐츠 제작 플랫폼",
+        "desc": "크리에이터와 기업을 위한 AI 기반 제작 도구. 하나의 아이디어에서 이미지·영상·카피를 한 그릇에 빚어내는, 현대의 알렘빅입니다.",
+        "visit": "Lembic.ai 방문"
       }
     },
+    "processEyebrow": "방법론 · III",
+    "processTitleA": "연금술사의 ",
+    "processEm": "방법",
+    "processTitleB": ".",
+    "processMeta": "네 단계. 매그넘 오푸스의 구조를 빌립니다 — 장식이 아닌, 원초적 가능성을 견고한 결과로 빚어내는 규율로서.",
     "process": {
-      "eyebrow": "프로세스",
-      "title": "연금술사의 방법",
-      "subtitle": "원석 같은 아이디어가 정련된 가치로",
-      "discover": {
-        "step": "01",
-        "title": "발견",
-        "description": "비즈니스를 이해하고 진짜 문제를 드러냅니다"
-      },
-      "refine": {
-        "step": "02",
-        "title": "정련",
-        "description": "복잡함을 명확한 접근법으로 정제합니다"
-      },
-      "transmute": {
-        "step": "03",
-        "title": "변환",
-        "description": "AI, 데이터, 클라우드 — 엄정하게 엔지니어링합니다"
-      },
-      "deliver": {
-        "step": "04",
-        "title": "전달",
-        "description": "측정 가능한, 지속 가능한 결과를 제공합니다"
-      }
+      "nigredo": { "stage": "Nigredo · 흑화", "title": "발견", "desc": "비즈니스를 이해합니다. 요청 아래 묻혀 있던 진짜 문제를 드러내고, 전제를 해체합니다." },
+      "albedo": { "stage": "Albedo · 백화", "title": "정제", "desc": "복잡함을 한 줄기로 증류합니다. 작업이 살아남는 데 필요 없는 모든 것을 걷어냅니다." },
+      "citrinitas": { "stage": "Citrinitas · 황화", "title": "변환", "desc": "엄밀한 엔지니어링 — AI, 데이터, 클라우드. 추상을 구체로, 구체를 운영 가능한 시스템으로 바꿉니다." },
+      "rubedo": { "stage": "Rubedo · 적화", "title": "전달", "desc": "측정 가능하고 지속 가능한 결과를 출시합니다. 소모되지 않고 누적되는 성과를." }
     },
-    "cta": {
-      "title": "함께 가치를 만들어갈 준비가 되셨나요?",
-      "subtitle": "프로젝트에 대해 이야기해 보세요. 최적의 접근을 제안해 드립니다.",
-      "button": "문의하기"
-    }
-  },
-  "About": {
-    "metadata": {
-      "title": "회사소개 · D-ALabs"
-    },
-    "hero": {
-      "eyebrow": "회사소개",
-      "title": "Digital Alchemist Labs",
-      "description": "기술을 가치로 전환하는 디지털 연금술. 혁신, 실험, 그리고 실행을 통해 변화를 만들어갑니다."
-    },
-    "philosophy": {
-      "body": "D-ALabs는 데이터 사이언스, 인공지능, 클라우드 컴퓨팅, 그리고 창의성을 결합하여 도전을 기회로 전환합니다. 우리는 디지털 트랜스포메이션과 인간 중심 솔루션을 통한 지속 가능한 성장을 믿습니다."
-    },
-    "values": {
-      "title": "우리를 움직이는 것",
-      "mission": {
-        "title": "미션",
-        "description": "디지털 연금술을 통해 긍정적인 변화를 창출합니다"
-      },
-      "vision": {
-        "title": "비전",
-        "description": "가장 신뢰받는 디지털 혁신 파트너가 됩니다"
-      },
-      "principles": {
-        "title": "가치",
-        "description": "인간 중심, 실험 정신, 지속 가능한 임팩트"
-      },
-      "culture": {
-        "title": "문화",
-        "description": "개방성, 자율성, 탁월함의 추구"
-      }
-    },
-    "products": {
-      "title": "운영 중인 서비스",
-      "subtitle": "D-ALabs가 만들어가는 프로덕트"
-    },
-    "cta": {
-      "title": "함께 변화를 만들어갈 준비가 되셨나요?",
-      "subtitle": "우리와 함께 가치를 창출하는 방법을 알아보세요",
-      "primary": "서비스 보기",
-      "secondary": "문의하기"
-    }
+    "ctaEyebrow": "작업의 시작",
+    "ctaTitleA": "",
+    "ctaEm": "가치 있는",
+    "ctaTitleB": " 무언가를 함께 만들어볼까요?",
+    "ctaSub": "프로젝트에 대해 들려주세요. 알맞은 접근 방식과, 그에 맞는 그릇의 모양을 함께 제안드립니다.",
+    "ctaBtn": "연락하기"
   },
   "Services": {
-    "metadata": {
-      "title": "서비스 · D-ALabs"
-    },
-    "hero": {
-      "eyebrow": "서비스",
-      "title": "우리의 전문성",
-      "description": "비즈니스 변화를 위한 디지털 연금술 솔루션"
-    },
-    "items": {
+    "heroEyebrow": "서비스 · Disciplinae",
+    "heroTitleA": "세 가지 분야, ",
+    "heroEm": "함께 다룹니다",
+    "heroTitleB": ".",
+    "heroLede": "모든 프로젝트는 4단계 방법론을 거칩니다. 아래 분야들은 우리가 다루는 재료입니다 — 무엇을 섞고, 녹이고, 정제하는지에 대한.",
+    "disciplines": {
       "ai": {
-        "title": "AI 컨설팅",
-        "description": "PoC에서 프로덕션 배포까지, 전략적 AI 구현",
-        "features": ["전략 수립", "PoC 구현", "모델 트레이닝", "프로덕션 스케일링"]
+        "num": "분야 I",
+        "title": "AI 전략",
+        "subtitle": "Sulfur · 영혼 · 작업에 성격을 부여하는 것",
+        "intro": "AI는 그것을 어떻게 활용할지 아는 시스템 안에 있을 때 가장 유용합니다. 비즈니스를 위한 AI 역량의 범위를 잡고, 구축하고, 운영화하는 전 과정을 — 측정·평가되며 시간이 지날수록 개선되도록 — 함께합니다.",
+        "offerings": [
+          { "k": "AI 로드맵", "v": "디스커버리 워크숍, 기회 규모 산정, 자체 구축 vs 도입 분석." },
+          { "k": "응용 LLM 시스템", "v": "검색, 에이전트, 구조화 출력, 도구 사용 — 프로덕션 준비 완료." },
+          { "k": "평가 및 안전성", "v": "맞춤형 평가, 레드티밍, 프롬프트와 체인에 대한 관측성." },
+          { "k": "모델 파인튜닝", "v": "SFT, DPO, 범용 모델로 충분치 않을 때의 도메인 특화 적응." }
+        ],
+        "tags": ["OpenAI", "Anthropic", "Open-weight", "RAG", "에이전트", "평가"]
       },
       "data": {
+        "num": "분야 II",
         "title": "데이터 플랫폼",
-        "description": "데이터 수집, 처리, 시각화를 위한 엔드투엔드 솔루션",
-        "features": ["데이터 파이프라인", "분석 대시보드", "실시간 처리", "데이터 거버넌스"]
+        "subtitle": "Salt · 몸 · 모든 것이 그 위에서 단조되는 재료",
+        "intro": "깨끗한 데이터 없이는 그 위의 모든 작업이 허상입니다. 소스에서 인사이트까지 안정적으로 데이터를 옮기는 플랫폼을 — 흥미로운 작업이 그 위에서 일어날 수 있도록 — 흔들림 없이 설계합니다.",
+        "offerings": [
+          { "k": "수집 및 파이프라인", "v": "배치·스트리밍 수집, 스키마 강제, 계보 추적." },
+          { "k": "웨어하우스 및 레이크하우스", "v": "분석과 ML을 위한 모델링 — Snowflake, BigQuery, Iceberg." },
+          { "k": "분석 및 BI", "v": "시맨틱 레이어, 그리고 팀이 실제로 열어보는 대시보드." },
+          { "k": "ML 피처 플랫폼", "v": "온라인·오프라인 피처 일관성, 드리프트 모니터링." }
+        ],
+        "tags": ["dbt", "Airflow", "Kafka", "Snowflake", "BigQuery", "Iceberg"]
       },
       "cloud": {
+        "num": "분야 III",
         "title": "클라우드 아키텍처",
-        "description": "모던 애플리케이션을 위한 확장 가능한 인프라",
-        "features": ["시스템 설계", "마이그레이션 전략", "성능 최적화", "보안 구현"]
-      },
-      "product": {
-        "title": "프로덕트 개발",
-        "description": "풀스택 웹 및 모바일 애플리케이션 개발",
-        "features": ["UI/UX 디자인", "프론트엔드", "백엔드 API", "모바일"]
-      },
-      "growth": {
-        "title": "그로스 가속화",
-        "description": "실험 기반 성장 및 최적화 전략",
-        "features": ["A/B 테스팅", "그로스 분석", "전환율 최적화", "사용자 리서치"]
-      },
-      "training": {
-        "title": "트레이닝 & 워크숍",
-        "description": "팀의 디지털 역량을 키웁니다",
-        "features": ["기술 교육", "워크숍", "멘토링", "베스트 프랙티스"]
+        "subtitle": "Mercury · 정신 · 영혼과 몸을 묶어주는 것",
+        "intro": "모든 것이 실제로 동작하는 인프라 계층. 오늘의 부하와 2년 뒤의 부하를 함께 고려하되, 지금 그 둘 모두에 비용을 지불하지 않도록 설계합니다.",
+        "offerings": [
+          { "k": "아키텍처 및 마이그레이션", "v": "그린필드 설계 또는 레거시로부터의 체계적 이전." },
+          { "k": "Infrastructure as Code", "v": "Terraform, Pulumi, GitOps — 리뷰 가능한 코드로서의 인프라." },
+          { "k": "SRE 및 관측성", "v": "SLO, 분산 트레이싱, 학습하는 장애 대응." },
+          { "k": "비용 엔지니어링", "v": "청구서의 80%를 차지하지만 가치의 20%만 만드는 영역을 찾아냅니다." }
+        ],
+        "tags": ["AWS", "GCP", "쿠버네티스", "Terraform", "OpenTelemetry"]
       }
     },
-    "process": {
-      "title": "우리의 방식",
-      "subtitle": "체계적인 접근으로 가치를 창출합니다",
-      "discovery": { "title": "발견", "description": "비즈니스 이해와 요구사항 분석" },
-      "strategy": { "title": "전략", "description": "최적의 솔루션 설계" },
-      "execute": { "title": "실행", "description": "애자일 방식의 구현" },
-      "iterate": { "title": "반복", "description": "지속적인 개선과 최적화" }
+    "engagementEyebrow": "협업 방식",
+    "engagementTitleA": "세 가지 ",
+    "engagementEm": "형태",
+    "engagementTitleB": "의 작업을 위한 세 그릇.",
+    "engagementMeta": "대부분의 프로젝트는 아래 세 형태 중 하나에 들어맞습니다. 조합도 가능합니다.",
+    "engagement": {
+      "discovery": { "roman": "I", "label": "디스커버리 스프린트", "dur": "2 – 4주", "desc": "워크숍, 이해관계자 인터뷰, 기술 실사. 슬라이드가 아니라 문서화된 로드맵을 남깁니다." },
+      "build": { "roman": "II", "label": "빌드 프로젝트", "dur": "8 – 16주", "desc": "특정 역량 — 모델, 파이프라인, 플랫폼 모듈 — 을 집중적으로 빌드해 프로덕션까지 출시합니다." },
+      "embedded": { "roman": "III", "label": "임베디드 랩", "dur": "지속", "desc": "전달로 끝나지 않는 누적형 문제를 위해, 시니어로 구성된 소규모 팀이 고객사 안에 함께 자리합니다." }
     },
-    "cta": {
-      "title": "프로젝트를 시작할 준비가 되셨나요?",
-      "subtitle": "비즈니스 성장을 위한 최적의 솔루션을 함께 찾아드립니다",
-      "primary": "문의하기",
-      "secondary": "회사 소개"
-    }
+    "ctaTitleA": "무엇을 ",
+    "ctaEm": "만들고",
+    "ctaTitleB": " 싶은지 들려주세요.",
+    "ctaSub": "한 주 안에 적합한 접근 방식을 제안드립니다.",
+    "ctaBtn": "대화 시작하기"
+  },
+  "About": {
+    "heroEyebrow": "소개 · Laboratorium",
+    "heroTitleA": "",
+    "heroEm": "신중한",
+    "heroTitleB": " 작업을 위한 작은 연구소.",
+    "heroLede": "디알랩스는 단순한 전제에서 출발합니다 — 가장 가치 있는 소프트웨어는 문제와 공정 모두를 진지하게 대하는 작은 팀이 만든다는 것. 한 번에 적은 일을, 깊이 있게 다룹니다.",
+    "tenetsEyebrow": "원칙 · IV",
+    "tenets": {
+      "substance": { "n": "I", "t": "표면이 아닌 실체", "d": "데모는 제품이 아닙니다. 작업이 정말로 작동하는지 가늠하는 유일하게 정직한 척도는 프로덕션입니다." },
+      "deeply": { "n": "II", "t": "적게, 깊이", "d": "받는 일보다 거절하는 일이 더 많습니다. 집중도를 유지하기 위해 연구소는 작게 둡니다." },
+      "senior": { "n": "III", "t": "오직 시니어의 손으로", "d": "주니어 벤치 없음. 프로젝트의 모든 사람은 같은 종류의 작업을 출시해본 경험이 있습니다." },
+      "compound": { "n": "IV", "t": "성과는 누적된다", "d": "내년의 팀이 부채가 아닌 레버리지를 물려받도록, 모든 시스템을 설계합니다." }
+    },
+    "teamEyebrow": "연구소",
+    "teamTitleA": "",
+    "teamEm": "실무자",
+    "teamTitleB": "들.",
+    "teamMeta": "엔지니어와 연구자로 이루어진 핵심 팀. 작업이 요구할 때에만, 천천히 성장합니다.",
+    "team": [
+      { "i": "JL", "name": "이제석", "role": "창업자 · CEO" },
+      { "i": "SM", "name": "민서", "role": "AI 리서치" },
+      { "i": "HK", "name": "김현우", "role": "데이터 플랫폼" },
+      { "i": "JP", "name": "박지영", "role": "클라우드 · SRE" }
+    ],
+    "establishmentEyebrow": "공식 기록",
+    "establishmentTitle": "회사 정보.",
+    "establishment": [
+      { "k": "법인명", "v": "디알랩스 유한회사" },
+      { "k": "대표이사", "v": "이제석" },
+      { "k": "사업자등록번호", "v": "547-87-03375" },
+      { "k": "본사", "v": "경기도 하남시 위례대로 190, 1140호 (대한민국)" },
+      { "k": "설립", "v": "MMXXIV · 2024" },
+      { "k": "은행 계좌", "v": "IBK기업은행 242-143459-04-001" }
+    ],
+    "ctaTitleA": "",
+    "ctaEm": "연구소",
+    "ctaTitleB": "와 함께 일해보세요.",
+    "ctaSub": "채용과 파트너십 문의 모두 같은 주소로 받습니다.",
+    "ctaBtn": "연구소에 연락"
   },
   "News": {
-    "metadata": {
-      "title": "뉴스 · D-ALabs"
-    },
-    "hero": {
-      "eyebrow": "뉴스",
-      "title": "최신 업데이트",
-      "description": "D-ALabs의 최신 소식과 인사이트"
-    },
-    "articles": {
-      "platformLaunch": {
-        "category": "보도자료",
-        "title": "D-ALabs, AI 기반 실험 플랫폼 런칭",
-        "excerpt": "머신러닝과 신속한 실험 역량을 결합한 혁신적인 플랫폼으로 디지털 트랜스포메이션을 가속화합니다.",
-        "date": "2025년 9월 1일",
-        "featured": "Featured"
+    "heroEyebrow": "저널 · Chronica",
+    "heroTitleA": "",
+    "heroEm": "연구소",
+    "heroTitleB": "의 기록.",
+    "heroLede": "엔지니어링 노트, 연구 결과, 제품 출시, 그리고 가치 있는 것을 만드는 공정에 대한 가끔의 에세이.",
+    "filterAll": "전체",
+    "filterProduct": "제품",
+    "filterResearch": "연구",
+    "filterEngineering": "엔지니어링",
+    "filterLab": "연구소",
+    "items": [
+      {
+        "date": "2026 · V · 14",
+        "tag": "제품",
+        "title": "SignGPT 2.0 — 온디바이스, 엔드투엔드, 8개 언어",
+        "excerpt": "수어 번역 엔진이 완전한 온디바이스 추론으로 전환됩니다. 새로운 원어 6종이 추가되고, 모바일 경험도 새롭게 디자인되었습니다."
       },
-      "communityBeta": {
-        "category": "공지",
-        "title": "커뮤니티 베타 프로그램 오픈",
-        "excerpt": "새로운 기능에 대한 얼리 액세스와 디지털 연금술의 미래를 함께 만들어갈 베타 커뮤니티에 참여하세요.",
-        "date": "2025년 8월 15일"
+      {
+        "date": "2026 · III · 02",
+        "tag": "연구",
+        "title": "증류된 에이전트 — 작은 모델이 프런티어를 이길 때",
+        "excerpt": "파인튜닝된 8B 모델이 프런티어 모델을 — 1/20의 비용으로 — 능가하는 프로덕션 에이전트 시스템에 대한 짧은 노트."
       },
-      "summit": {
-        "category": "이벤트",
-        "title": "Digital Alchemy Summit 2025",
-        "excerpt": "디지털 트랜스포메이션의 미래에 대한 인사이트를 나누는 업계 리더들과 혁신가들의 만남.",
-        "date": "2025년 7월 30일"
+      {
+        "date": "2026 · I · 22",
+        "tag": "연구소",
+        "title": "Lembic AI, 시드 라운드 마감 후 크리에이터 파트너 모집",
+        "excerpt": "디지털 콘텐츠 제작 플랫폼 Lembic AI가 시드 라운드를 마감하고, 선별된 크리에이터를 대상으로 얼리 액세스를 엽니다."
       },
-      "insight": {
-        "category": "인사이트",
-        "title": "AI 기반 비즈니스 전략의 미래",
-        "excerpt": "인공지능이 현대 기업의 전략적 의사결정을 어떻게 변화시키고 있는지 살펴봅니다.",
-        "date": "2025년 7월 15일"
+      {
+        "date": "2025 · XI · 08",
+        "tag": "엔지니어링",
+        "title": "Iceberg 위의 실용적인 데이터 플랫폼 — 12개월 회고",
+        "excerpt": "고객사의 분석 스택을 Iceberg + dbt + 약간의 Trino로 재구축했습니다. 12개월이 지난 지금, 무엇이 통했고 무엇이 통하지 않았는지."
+      },
+      {
+        "date": "2025 · IX · 30",
+        "tag": "연구소",
+        "title": "디알랩스, 한국 AI 얼라이언스 합류",
+        "excerpt": "한국어 LLM을 위한 오픈 평가 표준에 기여하기 위해 한국 AI 얼라이언스에 합류했습니다."
+      },
+      {
+        "date": "2025 · VII · 12",
+        "tag": "제품",
+        "title": "디알랩스의 새로운 디자인 언어",
+        "excerpt": "작업 뒤에 늘 자리하던 비유 — 복잡함을 가치로 바꾸는 공정으로서의 연금술 — 을 중심으로 시각 아이덴티티를 다시 빚었습니다."
       }
-    },
-    "newsletter": {
-      "title": "Stay Connected",
-      "subtitle": "뉴스레터를 구독하고 최신 업데이트를 받아보세요",
-      "cta": "구독하기"
-    }
+    ],
+    "ctaTitleA": "저널을 ",
+    "ctaEm": "받은편지함",
+    "ctaTitleB": "으로 받아보세요.",
+    "ctaSub": "월 1회 정도. 마케팅은 없습니다.",
+    "ctaPlaceholder": "your@address.com",
+    "ctaBtn": "구독"
   },
   "Community": {
-    "metadata": {
-      "title": "커뮤니티 · D-ALabs"
-    },
-    "hero": {
-      "eyebrow": "커뮤니티",
-      "title": "Join Our Community",
-      "description": "디지털 연금술사들과 연결하고, 배우고, 성장하세요"
-    },
-    "items": {
-      "forum": {
-        "title": "디스커션 포럼",
-        "description": "지식을 공유하고, 질문하고, 디지털 트랜스포메이션 프로젝트에서 협업하세요",
-        "status": "Coming Soon",
-        "members": "500+ members"
-      },
-      "events": {
-        "title": "밋업 & 이벤트",
-        "description": "온라인과 오프라인에서 진행되는 정기 밋업, 워크숍, 네트워킹 이벤트에 참여하세요",
-        "status": "Active",
-        "members": "200+ members"
-      },
-      "learning": {
-        "title": "러닝 리소스",
-        "description": "전문가들이 큐레이션한 학습 자료, 케이스 스터디, 베스트 프랙티스",
-        "status": "Beta",
-        "members": "150+ members"
-      },
-      "openSource": {
-        "title": "오픈소스",
-        "description": "오픈소스 프로젝트에 기여하고 디지털 연금술의 미래를 함께 만들어가세요",
-        "status": "Active",
-        "members": "75+ members"
-      }
-    },
-    "cta": {
-      "title": "함께 연결할 준비가 되셨나요?",
-      "subtitle": "디지털 미래를 만들어가는 혁신가들과 함께하세요",
-      "primary": "커뮤니티 가입",
-      "secondary": "최신 소식"
-    }
+    "heroEyebrow": "커뮤니티 · Conventus",
+    "heroTitleA": "",
+    "heroEm": "실무자",
+    "heroTitleB": "들의 모임.",
+    "heroLede": "AI와 데이터, 가치 창출의 교차점에서 일하는 엔지니어·연구자·운영자를 위해 모임과 스터디 그룹, 오픈 랩 나잇을 운영합니다.",
+    "programs": [
+      { "tag": "정기", "title": "랩 나잇", "desc": "하남 사무실에서 매월 열리는 오픈 저녁. 발표와 데모, 그리고 자유로운 시간. 만들고 있는 무언가를 가져오세요." },
+      { "tag": "분기", "title": "Convocation", "desc": "단일한 응용 AI 문제를 다루는 소규모 초청제 워킹 세션. 실무자 30명 한정." },
+      { "tag": "오픈", "title": "스터디 서클", "desc": "하나의 논문·시스템·코드베이스를 중심으로 한 리딩 그룹. 3주, 슬랙 채널 하나, 한 편의 요약." },
+      { "tag": "연례", "title": "The Alembic", "desc": "프로덕션 AI를 다루는 연례 단일 트랙 컨퍼런스. 키노트 스폰서도, 부스도 없습니다 — 오직 작업만." },
+      { "tag": "상시", "title": "오피스 아워", "desc": "어려운 문제에 매달리는 초기 기술 창업자를 위해, 실무자와 함께하는 45분 무료 면담." },
+      { "tag": "오픈소스", "title": "공용 도구", "desc": "평가 하네스, dbt 매크로, Terraform 모듈을 오픈소스로 유지·관리합니다." }
+    ],
+    "upcomingEyebrow": "다가오는 일정",
+    "upcomingTitleA": "",
+    "upcomingEm": "다음",
+    "upcomingTitleB": " 일정.",
+    "upcomingMeta": "모든 시간은 KST 기준. 등록 무료, 좌석 한정.",
+    "upcoming": [
+      { "date": "VI · 12", "month": "2026년 6월", "tag": "랩 나잇", "title": "프로덕션 에이전트 — 반복적으로 마주치는 실패 양상", "place": "하남, KR · 19:00" },
+      { "date": "VII · 03", "month": "2026년 7월", "tag": "스터디 서클", "title": "리딩 그룹 · Iceberg 명세", "place": "온라인 · 20:00" },
+      { "date": "VIII · 21", "month": "2026년 8월", "tag": "Convocation", "title": "한국어 LLM을 위한 평가 시스템", "place": "서울 · 종일" },
+      { "date": "X · 09", "month": "2026년 10월", "tag": "The Alembic", "title": "디알랩스 연례 컨퍼런스 · 단일 트랙, 하루", "place": "서울 · 종일" }
+    ],
+    "ctaTitleA": "이 ",
+    "ctaEm": "모임",
+    "ctaTitleB": "에 함께하시겠어요?",
+    "ctaSub": "캘린더에 새로운 일정이 추가될 때마다 짧은 알림을 보냅니다.",
+    "ctaBtn": "모임 참여"
   },
   "Support": {
-    "metadata": {
-      "title": "지원 · D-ALabs"
-    },
+    "metadata": { "title": "고객 지원 · D-ALabs" },
     "hero": {
-      "eyebrow": "지원",
-      "title": "Support Center",
-      "description": "디지털 트랜스포메이션의 성공을 위해 함께합니다"
-    },
-    "options": {
-      "tech": {
-        "title": "기술 지원",
-        "description": "구현, 문제 해결 및 최적화에 대한 도움을 받으세요",
-        "action": "기술팀 문의"
-      },
-      "sales": {
-        "title": "영업 문의",
-        "description": "서비스에 대해 알아보고 적합한 솔루션을 찾아보세요",
-        "action": "영업팀 상담"
-      },
-      "partner": {
-        "title": "파트너십",
-        "description": "협업 기회와 전략적 파트너십을 탐색하세요",
-        "action": "파트너십 논의"
-      }
+      "eyebrow": "고객 지원 · Auxilium",
+      "titleA": "",
+      "em": "연구소",
+      "titleB": "에 직접 연락해 주세요.",
+      "lede": "전용 지원 포털은 아직 준비 중입니다. 그때까지는 이메일로 보내주시면 실무자가 직접 답변드립니다."
     },
     "form": {
       "title": "문의하기",
@@ -336,13 +332,13 @@
     }
   },
   "Signup": {
-    "metadata": {
-      "title": "가입하기 · D-ALabs"
-    },
+    "metadata": { "title": "가입하기 · D-ALabs" },
     "hero": {
-      "eyebrow": "시작하기",
-      "title": "Join D-ALabs",
-      "description": "디지털 트랜스포메이션 여정을 함께 시작하세요"
+      "eyebrow": "준비 중 · Praeparatio",
+      "titleA": "회원가입은 ",
+      "em": "준비 중",
+      "titleB": "입니다.",
+      "lede": "그릇이 아직 봉인되기 전입니다. 마무리되는 동안 직접 연락 주세요."
     },
     "form": {
       "title": "계정 만들기",
@@ -365,34 +361,21 @@
     }
   },
   "Footer": {
-    "tagline": "Digital Alchemist Labs",
-    "description": "데이터와 기술을 가치로 전환합니다.",
-    "columns": {
-      "services": "서비스",
-      "company": "회사",
-      "contact": "연락처",
-      "legal": "약관"
-    },
-    "links": {
-      "about": "회사소개",
-      "services": "서비스",
-      "news": "뉴스",
-      "community": "커뮤니티",
-      "support": "지원",
-      "privacy": "개인정보처리방침",
-      "terms": "이용약관"
-    },
-    "comingSoon": "Coming Soon",
-    "company": {
-      "name": "디알랩스 유한회사",
-      "ceo": "대표 이제석",
-      "address": "경기도 하남시 위례대로 190 (학암동 661), 1140호",
-      "bizNumber": "사업자등록번호 547-87-03375",
-      "mailOrderNumber": "통신판매업신고 NaN",
-      "bankAccount": "IBK기업은행 242-143459-04-001 (유)디알랩스"
-    },
-    "rights": "All rights reserved.",
-    "madeWith": "Made with"
+    "taglineA": "디지털 연금술 연구소.",
+    "taglineB": "데이터와 기술을 가치로 빚어냅니다.",
+    "services": "서비스",
+    "company": "회사",
+    "contact": "연락처",
+    "aboutUs": "회사 소개",
+    "servicesLink": "서비스",
+    "newsLink": "소식",
+    "communityLink": "커뮤니티",
+    "support": "고객 지원",
+    "addressLine1": "경기도 하남시",
+    "addressLine2": "위례대로 190, 1140호",
+    "addressLine3": "대한민국",
+    "businessInfo": "디알랩스 유한회사 · 대표 이제석 · 사업자등록번호 547-87-03375 · IBK기업은행 242-143459-04-001",
+    "rights": "© MMXXVI · 디알랩스 · 모든 권리 보유"
   },
   "Common": {
     "learnMore": "자세히 보기",
