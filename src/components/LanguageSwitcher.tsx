@@ -20,22 +20,15 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div
-      role="group"
-      aria-label={t("label")}
-      className="inline-flex items-center rounded-lg border border-border p-0.5 text-[11px] font-medium tracking-wider"
-    >
+    <div role="group" aria-label={t("label")} className="lang-toggle">
       {routing.locales.map((loc) => (
         <button
           key={loc}
+          type="button"
           onClick={() => switchLocale(loc)}
           disabled={pending}
           aria-pressed={locale === loc}
-          className={`px-2 py-1 rounded-md transition-colors uppercase ${
-            locale === loc
-              ? "bg-muted text-foreground"
-              : "text-foreground-muted hover:text-foreground"
-          } disabled:opacity-50`}
+          className={locale === loc ? "active" : ""}
         >
           {loc}
         </button>

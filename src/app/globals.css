@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&family=Noto+Serif+KR:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&family=Gowun+Batang:wght@400;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css');
 @import "tailwindcss";
 
 /* D-ALabs — Alchemical Manuscript
    System: deep ink + gold + copper, parchment for light
    Type: Cormorant (display serif), Inter Tight (body), JetBrains Mono (mono)
-   Korean: Noto Serif KR / Noto Sans KR
+   Korean: Pretendard Variable (body), Gowun Batang (display / emphasis)
 */
 
 /* ===========================================
@@ -312,6 +313,31 @@ h4 { font-size: clamp(20px, 2vw, 24px); font-weight: 500; }
   transition: border-color 0.3s ease, color 0.3s ease;
 }
 .theme-toggle:hover { border-color: var(--line-strong); color: var(--gold); }
+
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px;
+}
+.lang-toggle button {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
+  color: var(--ink-dim);
+  padding: 6px 11px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.lang-toggle button:hover { color: var(--ink); }
+.lang-toggle button.active { color: var(--bg); background: var(--gold); }
+.lang-toggle button:disabled { opacity: 0.5; cursor: wait; }
+@media (max-width: 720px) { .lang-toggle { display: none; } }
 
 .contact-btn {
   font-family: 'JetBrains Mono', monospace;
@@ -910,19 +936,75 @@ h4 { font-size: clamp(20px, 2vw, 24px); font-weight: 500; }
 }
 
 /* ===========================================
-   Korean typography refinements
+   Korean typography
+   — Body: Pretendard (modern, balanced)
+   — Display: Gowun Batang (warm serif, pairs with Cormorant)
 =========================================== */
+:lang(ko),
+:lang(ko) body {
+  font-family: 'Pretendard Variable', 'Pretendard', 'Inter Tight', system-ui, -apple-system, sans-serif;
+  font-feature-settings: "ss06", "tnum";
+}
+
+:lang(ko) h1,
+:lang(ko) h2,
+:lang(ko) h3,
+:lang(ko) h4 {
+  font-family: 'Gowun Batang', 'Pretendard Variable', 'Pretendard', serif;
+  font-weight: 500;
+}
+
+:lang(ko) h1 { letter-spacing: -0.045em; line-height: 1.16; }
+:lang(ko) h2 { letter-spacing: -0.035em; line-height: 1.22; }
+:lang(ko) h3 { letter-spacing: -0.02em;  line-height: 1.32; }
+:lang(ko) h4 { letter-spacing: -0.015em; line-height: 1.36; }
+
+/* Emphasis — keep gold, swap italic for Gowun Batang weight bump */
 :lang(ko) .serif-italic,
 :lang(ko) .hero h1 .em,
-:lang(ko) .nav-brand-text em,
+:lang(ko) .nav-brand-text em {
+  font-family: 'Gowun Batang', 'Pretendard Variable', serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* Body copy — wider line-height for hangul comfort */
+:lang(ko) p,
+:lang(ko) .lede,
+:lang(ko) .hero .lede,
+:lang(ko) .cta-section .cta-sub,
+:lang(ko) .product-card .desc,
+:lang(ko) .expertise-card .text,
+:lang(ko) .process-row .desc,
+:lang(ko) .news-row .dim,
+:lang(ko) .community-card p {
+  line-height: 1.72;
+  letter-spacing: -0.01em;
+}
+
+/* Section headings — Gowun Batang */
+:lang(ko) .expertise-card h3,
+:lang(ko) .product-card h3,
+:lang(ko) .process-row .title-block h3,
+:lang(ko) .community-card h4,
+:lang(ko) .team-card .name,
+:lang(ko) .news-row .news-title,
+:lang(ko) .nav-brand-text {
+  font-family: 'Gowun Batang', 'Pretendard Variable', serif;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+:lang(ko) .news-row .news-title { line-height: 1.34; }
+
+/* Marquee — strip forced italic, switch to Gowun Batang */
 :lang(ko) .marquee-item {
+  font-family: 'Gowun Batang', 'Pretendard Variable', serif;
   font-style: normal;
   font-weight: 500;
 }
-:lang(ko) h1, :lang(ko) h2 { letter-spacing: -0.025em; line-height: 1.22; }
-:lang(ko) h3, :lang(ko) h4 { line-height: 1.32; letter-spacing: -0.01em; }
-:lang(ko) .hero .lede,
-:lang(ko) .cta-section .cta-sub { line-height: 1.7; }
+:lang(ko) .marquee-item span { font-style: normal !important; }
+
+/* Mono / caption micro-tracking — slight loosen so hangul breathes */
 :lang(ko) .eyebrow,
 :lang(ko) .mono,
 :lang(ko) .news-row .date,
@@ -938,13 +1020,19 @@ h4 { font-size: clamp(20px, 2vw, 24px); font-weight: 500; }
 :lang(ko) .btn,
 :lang(ko) .btn-primary,
 :lang(ko) .contact-btn,
-:lang(ko) .kv-row .k { letter-spacing: 0.05em; }
-:lang(ko) .mono {
-  font-family: 'JetBrains Mono', 'Noto Sans KR', ui-monospace, monospace;
+:lang(ko) .kv-row .k {
+  letter-spacing: 0.08em;
+  font-family: 'JetBrains Mono', 'Pretendard Variable', monospace;
 }
-:lang(ko) .news-row .news-title {
-  letter-spacing: -0.02em;
-  line-height: 1.34;
+:lang(ko) .mono {
+  font-family: 'JetBrains Mono', 'Pretendard Variable', ui-monospace, monospace;
+}
+
+/* Form inputs / textareas in Korean */
+:lang(ko) input,
+:lang(ko) textarea,
+:lang(ko) select {
+  font-family: 'Pretendard Variable', 'Pretendard', inherit;
 }
 
 /* ===========================================

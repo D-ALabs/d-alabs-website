@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { BrandMark } from "@/components/sigils";
 import ThemeToggle from "./ThemeToggle";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const NAV = [
   { key: "home", href: "/" },
@@ -41,6 +42,7 @@ export default function Header() {
           ))}
         </ul>
         <div className="nav-actions">
+          <LanguageSwitcher />
           <ThemeToggle />
           <a className="contact-btn" href="mailto:contact@d-alabs.com">
             {t("contact")}
