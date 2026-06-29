@@ -460,9 +460,7 @@ h1 .serif-italic, h2 .serif-italic, h3 .serif-italic,
   position: fixed;
   inset: 0;
   z-index: 200;
-  background: color-mix(in srgb, var(--bg) 97%, transparent);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  background: var(--bg);
   display: flex;
   flex-direction: column;
   padding: 88px clamp(24px, 7vw, 40px) 40px;
@@ -910,6 +908,7 @@ h1 .serif-italic, h2 .serif-italic, h3 .serif-italic,
 .process-row .desc { color: var(--ink-dim); font-size: 0.99rem; line-height: 1.55; margin-top: 10px; max-width: 34ch; }
 .process-row .glyph-end { display: none; }
 @media (max-width: 720px) {
+  .process-list { grid-template-columns: 1fr; }
   .process-row { border-right: none; border-bottom: 1px solid var(--line); padding: 24px 0; }
   .process-row:not(:first-child) { padding-left: 0; }
 }

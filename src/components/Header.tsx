@@ -52,7 +52,8 @@ export default function Header() {
   }, [open]);
 
   return (
-    <nav className={`nav${scrolled ? " nav-scrolled" : ""}${hidden ? " nav-hidden" : ""}`}>
+    <>
+      <nav className={`nav${scrolled ? " nav-scrolled" : ""}${hidden ? " nav-hidden" : ""}`}>
       <div className="nav-inner">
         <Link href="/" className="nav-brand" aria-label="D-ALabs home">
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -89,6 +90,7 @@ export default function Header() {
           </button>
         </div>
       </div>
+      </nav>
 
       {open && (
         <div className="mobile-menu" role="dialog" aria-modal="true">
@@ -116,6 +118,6 @@ export default function Header() {
           </Link>
         </div>
       )}
-    </nav>
+    </>
   );
 }
