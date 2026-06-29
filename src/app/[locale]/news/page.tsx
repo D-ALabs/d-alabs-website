@@ -45,15 +45,15 @@ export default function NewsPage() {
                   key={f.key}
                   onClick={() => setActive(f.key)}
                   style={{
-                    fontFamily: "JetBrains Mono, monospace",
+                    fontFamily: "'Space Mono', monospace",
                     fontSize: 11,
-                    letterSpacing: "0.18em",
+                    letterSpacing: "0.16em",
                     textTransform: "uppercase",
                     padding: "8px 16px",
                     border: "1px solid",
-                    background: on ? "var(--gold)" : "transparent",
+                    background: on ? "var(--accent)" : "transparent",
                     color: on ? "var(--bg)" : "var(--ink-dim)",
-                    borderColor: on ? "var(--gold)" : "var(--line)",
+                    borderColor: on ? "var(--accent)" : "var(--line)",
                     borderRadius: 999,
                     cursor: "pointer",
                     transition: "all 0.3s ease",

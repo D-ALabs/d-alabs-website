@@ -14,10 +14,7 @@ export default function AboutPage() {
     <div className="page-enter">
       <section className="section" style={{ paddingTop: 100, paddingBottom: 100 }}>
         <div className="container">
-          <div
-            className="about-hero"
-            style={{ display: "grid", gridTemplateColumns: "1.4fr 1fr", gap: 80, alignItems: "center" }}
-          >
+          <div className="about-hero">
             <div>
               <div className="eyebrow left" style={{ marginBottom: 28 }}>
                 <span>{t("heroEyebrow")}</span>
@@ -51,10 +48,7 @@ export default function AboutPage() {
               <div className="eyebrow left" style={{ marginBottom: 40 }}>
                 <span>{t("tenetsEyebrow")}</span>
               </div>
-              <div
-                className="tenets-grid"
-                style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "60px 80px" }}
-              >
+              <div className="tenets-grid">
                 {TENETS.map((key) => (
                   <div key={key}>
                     <div className="serif-italic gold" style={{ fontSize: 48, marginBottom: 12, lineHeight: 1 }}>
@@ -106,7 +100,7 @@ export default function AboutPage() {
       <section className="section">
         <div className="container">
           <Reveal>
-            <div className="company-grid" style={{ display: "grid", gridTemplateColumns: "1fr 2fr", gap: 60 }}>
+            <div className="company-grid">
               <div>
                 <div className="eyebrow left" style={{ marginBottom: 20 }}>
                   <span>{t("establishmentEyebrow")}</span>

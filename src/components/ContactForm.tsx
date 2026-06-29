@@ -108,13 +108,13 @@ export default function ContactForm() {
       />
 
       {status === "error" && Object.keys(errors).length === 0 && (
-        <p className="text-sm text-red-400">{t("error")}</p>
+        <p className="text-sm field-error-text" role="alert">{t("error")}</p>
       )}
 
       <button
         type="submit"
         disabled={submitting}
-        className="btn-primary text-sm w-full sm:w-auto px-6"
+        className="btn btn-primary text-sm w-full sm:w-auto px-6"
       >
         {submitting ? t("submitting") : t("submit")}
       </button>
@@ -159,6 +159,7 @@ function Field({
           required={required}
           disabled={disabled}
           aria-invalid={!!error}
+          aria-describedby={error ? `${id}-error` : undefined}
           className={`field min-h-32 resize-none ${error ? "field-error" : ""}`}
         />
       ) : (
@@ -170,11 +171,12 @@ function Field({
           required={required}
           disabled={disabled}
           aria-invalid={!!error}
+          aria-describedby={error ? `${id}-error` : undefined}
           className={`field ${error ? "field-error" : ""}`}
         />
       )}
       {error && (
-        <p className="text-xs text-red-400" role="alert">
+        <p id={`${id}-error`} className="text-xs field-error-text" role="alert">
           {error}
         </p>
       )}

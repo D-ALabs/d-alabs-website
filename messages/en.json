@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "D-ALabs · A small lab for AI, data, and cloud",
-    "description": "D-ALabs is a small lab that builds production-grade AI, data, and cloud systems. We turn ideas into shipped, measurable work.",
+    "title": "D-ALabs — Applied AI Lab",
+    "description": "D-ALabs is an applied AI lab building production-grade AI, data, and cloud systems. We turn ideas into shipped, measurable work.",
     "siteName": "D-ALabs"
   },
   "Nav": {
@@ -13,6 +13,7 @@
     "support": "Support",
     "signup": "Sign Up",
     "contact": "Contact",
+    "cta": "Get in touch",
     "menu": "Menu",
     "close": "Close"
   },
@@ -26,112 +27,170 @@
     "toDark": "Switch to dark mode"
   },
   "Home": {
-    "heroEyebrow": "Digital Alchemist Labs · Est. 2024",
-    "heroTitleA": "Turning ",
-    "heroEmA": "ideas",
-    "heroTitleB": " into ",
-    "heroEmB": "real value",
-    "heroTitleC": ".",
-    "heroLede": "We build with AI, data, and cloud — engineering systems that ship, measure, and improve. A small lab doing serious work.",
-    "heroCta1": "Explore Services",
-    "heroCta2": "About the Lab",
-    "heroStat1": "Products in Production",
-    "heroStat2": "Core Disciplines",
-    "heroStat3": "Phase Process",
+    "heroTitle": "Frontier AI, engineered to ship.",
+    "heroLede": "D-ALabs is an applied AI lab. We design, build, and ship intelligent systems across AI, data, and cloud — from first hypothesis to production at scale.",
+    "heroCta1": "Get in touch",
+    "heroCta2": "See our work",
+    "heroMeta": {
+      "m1": {
+        "num": "2025",
+        "label": "Founded"
+      },
+      "m2": {
+        "num": "2",
+        "label": "Products live"
+      },
+      "m3": {
+        "num": "3",
+        "label": "Core disciplines"
+      }
+    },
     "marquee": [
-      "Solve et Coagula",
-      "AI · Data · Cloud",
-      "From PoC to Production",
-      "Small lab, deep work",
-      "Quinta Essentia",
-      "Engineered with rigor",
-      "Shipped, not pitched"
+      "Applied AI",
+      "LLM systems",
+      "RAG & agents",
+      "Data platforms",
+      "Cloud architecture",
+      "On-device inference",
+      "Evaluation-first",
+      "PoC to production"
     ],
-    "expertiseEyebrow": "Core Expertise · I",
-    "expertiseTitleA": "What we ",
-    "expertiseEm": "do",
-    "expertiseTitleB": ".",
-    "expertiseMeta": "Three disciplines, practiced together. Research-grade thinking, production-grade engineering — shipped through experimentation, measured in outcomes.",
+    "whatLabel": "What we do",
+    "whatTitle": "Three disciplines, one team.",
+    "whatMeta": "Research-grade thinking, production-grade engineering — practiced together, and measured by what actually ships.",
     "disciplineLabel": "Discipline",
-    "expertise": {
+    "disciplines": {
       "ai": {
         "title": "AI Strategy",
-        "desc": "From proof-of-concept to production. Applied AI for your actual problem — not the latest hype cycle.",
-        "tags": ["LLM Systems", "Agents", "Evaluation", "Fine-tuning"]
+        "desc": "From proof-of-concept to production. Applied AI for the problem in front of you — not the latest hype cycle.",
+        "tags": [
+          "LLM Systems",
+          "Agents",
+          "Evaluation",
+          "Fine-tuning"
+        ]
       },
       "data": {
         "title": "Data Platform",
-        "desc": "End-to-end ingestion, processing, and visualization. The foundation everything else runs on.",
-        "tags": ["Pipelines", "Warehousing", "Streaming", "Analytics"]
+        "desc": "End-to-end ingestion, processing, and analytics. The dependable foundation everything else runs on.",
+        "tags": [
+          "Pipelines",
+          "Warehousing",
+          "Streaming",
+          "Analytics"
+        ]
       },
       "cloud": {
         "title": "Cloud Architecture",
         "desc": "Scalable, reliable infrastructure for growth. Flexible underneath, predictable on the surface.",
-        "tags": ["AWS", "Kubernetes", "IaC", "Observability"]
+        "tags": [
+          "AWS",
+          "Kubernetes",
+          "IaC",
+          "Observability"
+        ]
       }
     },
-    "productsEyebrow": "Our Work · II",
-    "productsTitleA": "Products we've ",
-    "productsEm": "shipped",
-    "productsTitleB": ".",
-    "productsMeta": "Real products, in production. Each one tackles a different shape of work — language, image, voice, value.",
+    "workLabel": "Selected work",
+    "workTitle": "Products in production.",
+    "workMeta": "Two products we designed, built, and keep running — each tackling a different shape of work.",
     "products": {
       "signgpt": {
         "kicker": "Sign Language AI",
-        "desc": "An AI-powered sign language translation engine that removes the barrier between hearing and Deaf communities. Real-time recognition and translation, on-device.",
+        "desc": "An AI sign-language translation engine that removes the barrier between hearing and Deaf communities — real-time recognition and translation, on-device.",
         "visit": "Visit SignGPT.org"
       },
       "lembic": {
         "kicker": "Content Creation Platform",
-        "desc": "An AI-driven creation suite for creators and businesses. Start with one idea — generate images, video, and copy in a single workflow.",
+        "desc": "An AI-driven creation suite for creators and teams. Start with one idea and generate images, video, and copy in a single workflow.",
         "visit": "Visit Lembic.ai"
       }
     },
-    "processEyebrow": "Method · III",
-    "processTitleA": "Our ",
-    "processEm": "method",
-    "processTitleB": ".",
-    "processMeta": "Four phases. A repeatable process for turning raw possibility into something durable. We name the stages after the Magnum Opus — not as ornament, but as a way to be honest about which phase the work is in.",
+    "processLabel": "How we work",
+    "processTitle": "Run it like an experiment.",
+    "processMeta": "A repeatable loop from question to production — and an honest answer about which stage the work is really in.",
     "process": {
-      "nigredo": {
-        "stage": "Nigredo · Blackening",
+      "discover": {
         "title": "Discover",
-        "desc": "Understand the business. Find the actual problem buried beneath the request. Challenge assumptions."
+        "desc": "Find the real problem under the request, and the single metric that defines success."
       },
-      "albedo": {
-        "stage": "Albedo · Whitening",
-        "title": "Refine",
-        "desc": "Distill complexity into a focused approach. Cut anything the work can survive without."
+      "prototype": {
+        "title": "Prototype",
+        "desc": "The smallest working proof that can actually teach us something — in weeks, not quarters."
       },
-      "citrinitas": {
-        "stage": "Citrinitas · Yellowing",
-        "title": "Transmute",
-        "desc": "Engineer with rigor — AI, data, cloud. Make the abstract concrete; make the concrete operational."
+      "evaluate": {
+        "title": "Evaluate",
+        "desc": "Measure against real data and honest baselines before anything reaches users."
       },
-      "rubedo": {
-        "stage": "Rubedo · Reddening",
-        "title": "Deliver",
-        "desc": "Ship measurable, sustainable outcomes. Outcomes that compound, not consume."
+      "ship": {
+        "title": "Ship",
+        "desc": "Production deploy with observability and guardrails, built to keep improving."
       }
     },
-    "ctaEyebrow": "Let's Talk",
-    "ctaTitleA": "Ready to build something ",
-    "ctaEm": "valuable",
-    "ctaTitleB": "?",
-    "ctaSub": "Tell us about your project. We'll propose the right approach within a week.",
-    "ctaBtn": "Get in Touch"
+    "stats": {
+      "s1": {
+        "num": "2025",
+        "label": "Founded"
+      },
+      "s2": {
+        "num": "2",
+        "label": "Products live"
+      },
+      "s3": {
+        "num": "3",
+        "label": "Core disciplines"
+      },
+      "s4": {
+        "num": "8",
+        "label": "Languages in SignGPT"
+      }
+    },
+    "aboutLabel": "Inside the lab",
+    "aboutTitle": "Senior hands, end to end.",
+    "aboutBody1": "D-ALabs is a senior team of engineers and researchers. The people who scope your problem are the ones who build and ship it.",
+    "aboutBody2": "Digital Alchemist Labs came together in 2024 and was founded in Hanam, Korea, in 2025. We measure ourselves by what reaches production, not by what gets demoed.",
+    "aboutFacts": {
+      "a": "Est. 2025",
+      "b": "Hanam, KR",
+      "c": "AI · Data · Cloud"
+    },
+    "aboutCta": "About the lab",
+    "notesLabel": "From the lab",
+    "notesTitle": "Notes & research.",
+    "notesMore": "All notes",
+    "notes": {
+      "n1": {
+        "date": "2026 · 05",
+        "tag": "Product",
+        "title": "SignGPT 2.0 — on-device, end-to-end, in eight languages"
+      },
+      "n2": {
+        "date": "2026 · 03",
+        "tag": "Research",
+        "title": "Distilled agents — when a smaller model beats the frontier"
+      },
+      "n3": {
+        "date": "2026 · 01",
+        "tag": "Lab",
+        "title": "Lembic AI closes its seed round and opens to creators"
+      }
+    },
+    "ctaEyebrow": "Start a project",
+    "ctaTitle": "Bring us your hardest problem.",
+    "ctaSub": "Tell us what you're building. We'll come back within a week with a point of view and a path to a working prototype.",
+    "ctaBtn1": "Get in touch"
   },
   "Services": {
     "heroEyebrow": "Services",
     "heroTitleA": "Three disciplines, ",
     "heroEm": "practiced together",
     "heroTitleB": ".",
-    "heroLede": "Every project goes through our four-phase process. The disciplines below describe what we actually build — and how we work across them.",
+    "heroLede": "Every project runs through our four-step process. The disciplines below describe what we actually build — and how we work across them.",
     "disciplines": {
       "ai": {
         "num": "Discipline I",
         "title": "AI Strategy",
-        "subtitle": "Sulfur — the intelligence layer",
+        "subtitle": "The intelligence layer",
         "intro": "AI is most useful when it sits inside a system designed for it. We scope, build, and operationalize AI capabilities that pay rent — measured, evaluated, and improving over time.",
         "offerings": [
           {
@@ -151,12 +210,19 @@
             "v": "SFT, DPO, domain-specific adaptation when generic isn't enough."
           }
         ],
-        "tags": ["OpenAI", "Anthropic", "Open-weight", "RAG", "Agents", "Evals"]
+        "tags": [
+          "OpenAI",
+          "Anthropic",
+          "Open-weight",
+          "RAG",
+          "Agents",
+          "Evals"
+        ]
       },
       "data": {
         "num": "Discipline II",
         "title": "Data Platform",
-        "subtitle": "Salt — the foundation",
+        "subtitle": "The foundation",
         "intro": "Without clean data, nothing downstream is real. We design platforms that move data reliably from source to insight — with the kind of quiet dependability that lets the interesting work happen on top.",
         "offerings": [
           {
@@ -176,12 +242,19 @@
             "v": "Online/offline feature consistency, drift monitoring."
           }
         ],
-        "tags": ["dbt", "Airflow", "Kafka", "Snowflake", "BigQuery", "Iceberg"]
+        "tags": [
+          "dbt",
+          "Airflow",
+          "Kafka",
+          "Snowflake",
+          "BigQuery",
+          "Iceberg"
+        ]
       },
       "cloud": {
         "num": "Discipline III",
         "title": "Cloud Architecture",
-        "subtitle": "Mercury — the connective layer",
+        "subtitle": "The connective layer",
         "intro": "The infrastructure layer where everything actually runs. We design for the load you have today and the one you'll have in two years — without paying for either of them right now.",
         "offerings": [
           {
@@ -201,7 +274,13 @@
             "v": "Finding the 80% of your bill that drives 20% of your value."
           }
         ],
-        "tags": ["AWS", "GCP", "Kubernetes", "Terraform", "OpenTelemetry"]
+        "tags": [
+          "AWS",
+          "GCP",
+          "Kubernetes",
+          "Terraform",
+          "OpenTelemetry"
+        ]
       }
     },
     "engagementEyebrow": "How we engage",
@@ -237,29 +316,29 @@
   },
   "About": {
     "heroEyebrow": "About",
-    "heroTitleA": "A small lab for ",
+    "heroTitleA": "A senior team for ",
     "heroEm": "careful",
     "heroTitleB": " work.",
     "heroLede": "D-ALabs was founded on a simple premise: the most valuable software is built by small teams who care about both the problem and the craft. We work on a few things at a time, and we work on them deeply.",
-    "tenetsEyebrow": "Principles · IV",
+    "tenetsEyebrow": "Principles",
     "tenets": {
       "substance": {
-        "n": "I",
+        "n": "01",
         "t": "Substance over surface",
         "d": "A demo isn't a product. Production is the only honest measure of whether the work actually works."
       },
       "deeply": {
-        "n": "II",
+        "n": "02",
         "t": "Few problems, deeply",
-        "d": "We turn away more work than we take on. The lab stays small so attention stays high."
+        "d": "We turn away more work than we take on, so attention stays sharp."
       },
       "senior": {
-        "n": "III",
+        "n": "03",
         "t": "Senior hands only",
         "d": "No junior bench. Every person on your project has shipped this kind of work before."
       },
       "compound": {
-        "n": "IV",
+        "n": "04",
         "t": "Outcomes compound",
         "d": "We design every system so next year's team inherits leverage, not legacy."
       }
@@ -269,19 +348,40 @@
     "teamEm": "team",
     "teamTitleB": ".",
     "teamMeta": "A core team of engineers and researchers. We grow slowly, and only when the work demands it.",
-    "team": [{ "i": "JL", "name": "Jeseok Lee", "role": "Founder · CEO" }],
+    "team": [
+      {
+        "i": "JL",
+        "name": "Jeseok Lee",
+        "role": "Founder · CEO"
+      }
+    ],
     "establishmentEyebrow": "Of record",
     "establishmentTitle": "Company details.",
     "establishment": [
-      { "k": "Legal Name", "v": "D-ALabs LLC" },
-      { "k": "Chief Executive", "v": "Jeseok Lee" },
-      { "k": "Business Registration", "v": "547-87-03375" },
+      {
+        "k": "Legal Name",
+        "v": "Digital Alchemist Labs"
+      },
+      {
+        "k": "Chief Executive",
+        "v": "Jeseok Lee"
+      },
+      {
+        "k": "Business Registration",
+        "v": "547-87-03375"
+      },
       {
         "k": "Headquarters",
         "v": "Suite 1140, 190 Wirye-daero, Hanam-si, Gyeonggi-do, Republic of Korea"
       },
-      { "k": "Founded", "v": "2024" },
-      { "k": "Banking", "v": "IBK 242-143459-04-001" }
+      {
+        "k": "Founded",
+        "v": "2025"
+      },
+      {
+        "k": "Banking",
+        "v": "IBK 242-143459-04-001"
+      }
     ],
     "ctaTitleA": "Come work with ",
     "ctaEm": "us",
@@ -335,7 +435,7 @@
         "date": "2025 · 07 · 12",
         "tag": "Product",
         "title": "A new design language for D-ALabs",
-        "excerpt": "We rebuilt our visual identity around the metaphor that's always sat behind the work — alchemy as a discipline for turning complexity into value."
+        "excerpt": "We rebuilt our visual identity around what the work has always been — quiet, modern engineering that turns complexity into something people can trust."
       }
     ],
     "ctaTitleA": "Have the journal sent to ",
@@ -359,7 +459,7 @@
       },
       {
         "tag": "Quarterly",
-        "title": "Convocation",
+        "title": "Roundtable",
         "desc": "A small, invite-only working session on a single applied AI problem. Capped at thirty practitioners."
       },
       {
@@ -369,8 +469,8 @@
       },
       {
         "tag": "Annual",
-        "title": "The Alembic",
-        "desc": "Our annual single-day conference on production AI. No keynote sponsors, no booths — just work."
+        "title": "Lab Summit",
+        "desc": "Our annual single-day conference on production AI. No keynote sponsors, no booths — just the work."
       },
       {
         "tag": "Always",
@@ -406,14 +506,14 @@
       {
         "date": "08 · 21",
         "month": "August 2026",
-        "tag": "Convocation",
+        "tag": "Roundtable",
         "title": "Evaluation systems for Korean-language LLMs",
         "place": "Seoul · all day"
       },
       {
         "date": "10 · 09",
         "month": "October 2026",
-        "tag": "The Alembic",
+        "tag": "Lab Summit",
         "title": "D-ALabs annual conference · single-track, single day",
         "place": "Seoul · all day"
       }
@@ -425,7 +525,9 @@
     "ctaBtn": "Join the Community"
   },
   "Support": {
-    "metadata": { "title": "Support · D-ALabs" },
+    "metadata": {
+      "title": "Support · D-ALabs"
+    },
     "hero": {
       "eyebrow": "Support",
       "titleA": "Reach the ",
@@ -434,7 +536,7 @@
       "lede": "A dedicated support portal is still in the works. For now, email us and a practitioner will respond personally."
     },
     "form": {
-      "title": "Get in Touch",
+      "title": "Get in touch",
       "subtitle": "Send us a message and we'll respond promptly.",
       "fields": {
         "name": "Name",
@@ -461,7 +563,9 @@
     }
   },
   "Signup": {
-    "metadata": { "title": "Sign Up · D-ALabs" },
+    "metadata": {
+      "title": "Sign Up · D-ALabs"
+    },
     "hero": {
       "eyebrow": "In Preparation",
       "titleA": "Sign-up is ",
@@ -490,12 +594,11 @@
     }
   },
   "Footer": {
-    "taglineA": "Digital Alchemist Labs.",
-    "taglineB": "Turning data and technology into value.",
-    "services": "Services",
+    "lede": "An applied AI lab turning frontier research into products people trust.",
     "company": "Company",
-    "contact": "Contact",
-    "aboutUs": "About Us",
+    "products": "Products",
+    "connect": "Connect",
+    "aboutUs": "About",
     "servicesLink": "Services",
     "newsLink": "News",
     "communityLink": "Community",
@@ -503,8 +606,8 @@
     "addressLine1": "1140, 190 Wirye-daero,",
     "addressLine2": "Hanam-si, Gyeonggi-do,",
     "addressLine3": "Republic of Korea",
-    "businessInfo": "D-ALabs LLC · CEO Jeseok Lee · Biz. 547-87-03375 · IBK 242-143459-04-001",
-    "rights": "© 2026 · D-ALabs · All rights reserved"
+    "businessInfo": "Digital Alchemist Labs · CEO Jeseok Lee · Biz. 547-87-03375",
+    "rights": "© 2026 D-ALabs. All rights reserved."
   },
   "Common": {
     "learnMore": "Learn More",

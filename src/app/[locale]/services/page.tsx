@@ -50,13 +50,10 @@ export default function ServicesPage() {
           >
             <div className="container">
               <Reveal>
-                <div
-                  className="services-block"
-                  style={{ display: "grid", gridTemplateColumns: "1fr 1.6fr", gap: 80, alignItems: "start" }}
-                >
+                <div className="services-block">
                   <div style={{ position: "sticky", top: 120 }}>
-                    <div style={{ color: "var(--gold)", opacity: 0.9, marginBottom: 20 }}>
-                      <Sigil size={140} />
+                    <div style={{ color: "var(--accent)", opacity: 0.9, marginBottom: 20 }}>
+                      <Sigil size={120} />
                     </div>
                     <div className="mono dim" style={{ marginBottom: 12 }}>
                       {t(`disciplines.${key}.num`)}
@@ -85,9 +82,9 @@ export default function ServicesPage() {
                         <span
                           key={tag}
                           style={{
-                            fontFamily: "JetBrains Mono, monospace",
-                            fontSize: 10,
-                            letterSpacing: "0.14em",
+                            fontFamily: "'Space Mono', monospace",
+                            fontSize: 11,
+                            letterSpacing: "0.06em",
                             textTransform: "uppercase",
                             color: "var(--ink-dim)",
                             border: "1px solid var(--line)",
@@ -125,10 +122,7 @@ export default function ServicesPage() {
             </div>
           </Reveal>
           <Reveal delay={100}>
-            <div
-              className="engagement-grid"
-              style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}
-            >
+            <div className="engagement-grid">
               {ENGAGEMENTS.map((k) => (
                 <div className="card" key={k}>
                   <span className="corner tl" />
