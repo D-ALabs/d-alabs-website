@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import {
   getMessages,
@@ -17,6 +17,15 @@ const THEME_PRELOAD = `(function(){try{var t=localStorage.getItem('theme');t=(t=
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
+
+// Browser chrome ("tab" toolbar) tracks the site palette, in step with the
+// flask favicon: paper in light chrome, deep navy in dark chrome.
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#F5F2EA" },
+    { media: "(prefers-color-scheme: dark)", color: "#0E1620" },
+  ],
+};
 
 export async function generateMetadata({
   params,
