@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import {
   getMessages,
@@ -11,21 +11,14 @@ import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-// Apply the saved theme before paint (default: light "paper") to avoid a flash.
-const THEME_PRELOAD = `(function(){try{var t=localStorage.getItem('theme');t=(t==='dark'||t==='light')?t:'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`;
+// Apply the saved theme before paint (default: light "paper") to avoid a flash,
+// and point the browser-chrome (mobile toolbar / "tab") theme-color at the
+// matching page background so it tracks the real theme, not the OS preference.
+const THEME_PRELOAD = `(function(){try{var t=localStorage.getItem('theme');t=(t==='dark'||t==='light')?t:'light';document.documentElement.setAttribute('data-theme',t);var c=t==='dark'?'#0E1620':'#F5F2EA';var m=document.querySelector('meta[name="theme-color"]');if(!m){m=document.createElement('meta');m.setAttribute('name','theme-color');document.head.appendChild(m);}m.setAttribute('content',c);}catch(e){}})();`;
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
-
-// Browser chrome ("tab" toolbar) tracks the site palette, in step with the
-// flask favicon: paper in light chrome, deep navy in dark chrome.
-export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#F5F2EA" },
-    { media: "(prefers-color-scheme: dark)", color: "#0E1620" },
-  ],
-};
 
 export async function generateMetadata({
   params,
