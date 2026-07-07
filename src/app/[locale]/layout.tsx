@@ -12,9 +12,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 // Apply the saved theme before paint (default: light "paper") to avoid a flash,
-// and point the browser-chrome (mobile toolbar / "tab") theme-color at the
-// matching page background so it tracks the real theme, not the OS preference.
-const THEME_PRELOAD = `(function(){try{var t=localStorage.getItem('theme');t=(t==='dark'||t==='light')?t:'light';document.documentElement.setAttribute('data-theme',t);var c=t==='dark'?'#0E1620':'#F5F2EA';var m=document.querySelector('meta[name="theme-color"]');if(!m){m=document.createElement('meta');m.setAttribute('name','theme-color');document.head.appendChild(m);}m.setAttribute('content',c);}catch(e){}})();`;
+// point the browser-chrome (mobile toolbar / "tab") theme-color at the matching
+// page background, and pick the matching favicon (navy flask on light theme,
+// cream flask on dark) so both track the real site theme, not the OS preference.
+const THEME_PRELOAD = `(function(){try{var t=localStorage.getItem('theme');t=(t==='dark'||t==='light')?t:'light';document.documentElement.setAttribute('data-theme',t);var c=t==='dark'?'#0E1620':'#F5F2EA';var m=document.querySelector('meta[name="theme-color"]');if(!m){m=document.createElement('meta');m.setAttribute('name','theme-color');document.head.appendChild(m);}m.setAttribute('content',c);var f=document.getElementById('dal-favicon');if(!f){f=document.createElement('link');f.id='dal-favicon';f.rel='icon';f.type='image/svg+xml';f.setAttribute('sizes','any');document.head.appendChild(f);}f.setAttribute('href',t==='dark'?'/favicon-dark.svg':'/favicon-light.svg');}catch(e){}})();`;
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
